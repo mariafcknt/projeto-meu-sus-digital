@@ -10,32 +10,121 @@
     />
     <link rel="stylesheet" href="css/core.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
 
+  <!--> REPOSITÓRIO -->
 <body>
 
     <header class="br-header">
     <div class="container-lg">
         <div class="header-top">
-        <div class="header-logo"><img src="\assets\logo.png" alt="Governo do Brasil" width="120">
+        <div class="header-logo"><img src="\assets\logo.svg" alt="Governo do Brasil">
              <div class="br-list">
             <div class="header">
-              <div class="title">Funcionalidades do Sistema</div>
+              <div class="title">Tela inicial</div>
             </div>
         </div>
     </header>   
 
     <main class="page-wrapper">
-        <div class="container">
+  
+    <div class="row justify-content-center">
+      <div class="col-12">
+
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="br-carousel" data-stage="in" data-mobile-nav="" aria-label="Carrossel de Exemplo" aria-roledescription="carousel">
+              <div class="carousel-button">
+                <button class="br-button carousel-btn-prev terciary circle" type="button" aria-label="Anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="carousel-stage">
+                <div class="carousel-page" active="active" role="group" aria-roledescription="slide" aria-live="polite">
+                  <div class="carousel-content bg-blue-10">
+                    <div class="h3 carousel-title">Página 1</div>
+                  </div>
+                </div>
+                <div class="carousel-page" role="group" aria-roledescription="slide" aria-live="polite">
+                  <div class="carousel-content bg-violet-warm-10">
+                    <div class="h3 carousel-title">Página 2</div>
+                  </div>
+                </div>
+                <div class="carousel-page" role="group" aria-roledescription="slide" aria-live="polite">
+                  <div class="carousel-content bg-yellow-5">
+                    <div class="h3 carousel-title">Página 3</div>
+                  </div>
+                </div>
+                <div class="carousel-page" role="group" aria-roledescription="slide" aria-live="polite">
+                  <div class="carousel-content bg-green-cool-10">
+                    <div class="h3 carousel-title">Página 4</div>
+                  </div>
+                </div>
+                <div class="carousel-page" role="group" aria-roledescription="slide" aria-live="polite">
+                  <div class="carousel-content bg-orange-vivid-10">
+                    <div class="h3 carousel-title">Página 5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-button">
+                <button class="br-button carousel-btn-next terciary circle" type="button" aria-label="Próximo"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="carousel-step">
+                <nav class="br-step" data-initial="1" data-type="simple" role="none">
+                  <div class="step-progress" role="listbox" aria-orientation="horizontal" aria-label="Lista de Opções">
+                    <button class="step-progress-btn" role="option" aria-posinset="1" aria-setsize="5" type="button"><span class="step-info">Exemplo de Rótulo 1</span></button>
+                    <button class="step-progress-btn" role="option" aria-posinset="2" aria-setsize="5" type="button"><span class="step-info">Exemplo de Rótulo 2</span></button>
+                    <button class="step-progress-btn" role="option" aria-posinset="3" aria-setsize="5" type="button"><span class="step-info">Exemplo de Rótulo 3</span></button>
+                    <button class="step-progress-btn" role="option" aria-posinset="4" aria-setsize="5" type="button"><span class="step-info">Exemplo de Rótulo 4</span></button>
+                    <button class="step-progress-btn" role="option" aria-posinset="5" aria-setsize="5" type="button"><span class="step-info">Exemplo de Rótulo 5</span></button>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+            
+            <span class="br-divider sm my-3"></span>
+
             <div class="row">
-                <div class="col-sm-12 col-md-8">
+              <div class="col-12 col-md-4">
+                <h2 class="titulo-grid-4">Minha Saúde</h2>
+              </div>
+            </div>
+       
+      </div>
+    </div>
 
-                        
+    <div class="card-box-wrapper">
+      
+      <div class="card-box">
+          <i class="fas fa-user-md icon-card-box" aria-hidden="true"></i>
+      </div>
+      <div class="card-box">
+          <i class="fas fa-user-md icon-card-box" aria-hidden="true"></i>
+      </div>
+      <div class="card-box">
+          <i class="fas fa-user-md icon-card-box" aria-hidden="true"></i>
+      </div>
+      <div class="card-box">
+          <i class="fas fa-user-md icon-card-box" aria-hidden="true"></i>
+          </div>
+      </div>
+    </div>
 
 
+
+  </div>
+</main>
+
+                      
 <script src="./js/core.min.js"></script>
 <script>
-        
+  const carouselList = []
+    for (const brCarousel of window.document.querySelectorAll('.br-carousel')) {
+      carouselList.push(new core.BRCarousel('br-carousel', brCarousel))
+    }
 
 </script>
 

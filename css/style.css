@@ -1,6 +1,31 @@
-.page-wrapper {
-    padding-top: 32px;
-    padding-bottom: 32px;    
-    padding-left: 16px;
-    padding-right: 16px;
+.page-wrapper {    
+    padding: 1rem;
+    justify-content: center;
+}
+
+.br-carousel {
+    --carousel-min-height: 250px !important;
+}
+
+.card-box-wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    gap: 16px;
+}
+
+.card-box{
+    display: flex;
+    justify-content: center;
+    width: 25vw;
+    padding: 5vw;
+    background-color: #edeff0;
+    border-radius: 8px;
+    
+}
+
+.icon-card-box {
+    width: 1em;
+    font-size: 2em;
+    color: #0C326F;
 }
