@@ -1,3 +1,7 @@
+main {
+    max-width: 100%;
+}
+
 .page-wrapper {    
     padding: 1rem;
     justify-content: center;
@@ -7,12 +11,12 @@
     --carousel-min-height: 250px !important;
 }
 
-.cards-wrapper {
+.links-wrapper {
     width: 100%;
     align-items: flex-start;
 }
 
-.card-content-wrapper {
+.links-content-wrapper {
     flex: 1;             
     min-width: 0;         
     display: flex;
@@ -27,9 +31,11 @@
     border: none;
     cursor: pointer;
     font: inherit;
+    border-radius: 8px;
+    padding-bottom: 8px;
 }
 
-.card-box {
+.link-box {
     width: 100%;
     height: 6rem;
     background-color: #edeff0;
@@ -38,20 +44,20 @@
     align-content: center;
 }
 
-.icon-card-box {
+.icon-link-box {
     width: 1em;
     font-size: clamp(2.5rem, 4vw, 4rem);
     color: #0C326F;
 }
 
-.minha-saude-content {
+.links-category-content {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
 /* Mobile: grade 2x2 */
-.cards-wrapper {
+.links-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
@@ -59,14 +65,39 @@
 
 /* Desktop: row com 4 colunas */
 @media (min-width: 36rem) {
-    .cards-wrapper {
+    .links-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .row-cards {
         display: flex;
         flex-direction: row;
         gap: 16px;
     }
 }
 
+.card-img {
+    aspect-ratio: 16 / 9; 
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 8px;
+}
 
+.card-img img {
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.row-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
 
 
