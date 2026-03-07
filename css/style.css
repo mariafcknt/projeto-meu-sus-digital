@@ -56,26 +56,10 @@ main {
     gap: 24px;
 }
 
-/* Mobile: grade 2x2 */
 .links-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-}
-
-/* Desktop: row com 4 colunas */
-@media (min-width: 36rem) {
-    .links-wrapper {
-        display: flex;
-        flex-direction: row;
-        gap: 16px;
-    }
-
-    .row-cards {
-        display: flex;
-        flex-direction: row;
-        gap: 16px;
-    }
 }
 
 .card-img {
@@ -94,10 +78,25 @@ main {
 }
 
 .row-cards {
+    padding-top: 8px;
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
+@media (min-width: 36rem) {
+    .links-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .row-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: center;
+    }
+}
 
 
