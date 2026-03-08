@@ -81,22 +81,43 @@ main {
     padding-top: 8px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
 }
 
-@media (min-width: 36rem) {
-    .links-wrapper {
-        display: flex;
-        flex-direction: row;
-        gap: 16px;
-    }
+.card-header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
+.br-tag {
+    margin-top: 4px;
+}
+
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (width >= 576px) {
     .row-cards {
-        display: flex;
-        flex-direction: row;
-        gap: 16px;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        row-gap: 0px;
+        column-gap: 16px;
+    }
+
+    .row-cards > * {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
     }
 }
 
-
+@media (width >= 1280px) {
+    .row-cards {
+        grid-template-columns: repeat(4, 1fr); /* 4 colunas de largura fixa */
+        justify-content: flex-start; /* alinha à esquerda */
+    }
+}
