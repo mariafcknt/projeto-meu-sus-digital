@@ -3,23 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Padrão Digital de Governo - Ambiente de Desenvolvimento</title>
+    <title>Meu SUS Digital - Tela Inicial</title>
     <link
       rel="stylesheet"
       href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css"
     />
     <link rel="stylesheet" href="css/core.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/telainicial.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
 
  
 <body>
 
+  <!--HEADER-->
+
   <header class="br-header">
     <div class="container-lg">
         <div class="header-top">
-        <div class="header-logo"><img src="\assets\logo.svg" alt="Governo do Brasil">
+        <div class="header-logo"><img src="\assets\logo.svg" alt="Logo do Governo do Brasil">
             <div class="br-list">
             <div class="header">
               <div class="title text-weight-semi-bold text-up-02">Tela inicial</div>
@@ -29,12 +32,14 @@
 
   <main class="page-wrapper">
 
+    <!--CARROSSEL-->
+
     <div class="row justify-content-center">
       <div class="col-12">
 
         <div class="row justify-content-center">
           <div class="col-12">
-            <div class="br-carousel" data-stage="in" data-mobile-nav="" aria-label="Carrossel de Exemplo" aria-roledescription="carousel">
+            <div class="br-carousel" data-stage="in" data-mobile-nav="" aria-label="Carrossel" aria-roledescription="carousel">
               <div class="carousel-button">
                 <button class="br-button carousel-btn-prev terciary circle" type="button" aria-label="Anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i>
                 </button>
@@ -73,11 +78,11 @@
               <div class="carousel-step">
                 <nav class="br-step" data-initial="1" data-type="simple" role="none">
                   <div class="step-progress" role="listbox" aria-orientation="horizontal" aria-label="Lista de Opções">
-                    <button class="step-progress-btn" role="option" aria-posinset="1" aria-setsize="5" type="button"><span class="step-info">Exemplo de Rótulo 1</span></button>
-                    <button class="step-progress-btn" role="option" aria-posinset="2" aria-setsize="5" type="button"><span class="step-info">Exemplo de Rótulo 2</span></button>
-                    <button class="step-progress-btn" role="option" aria-posinset="3" aria-setsize="5" type="button"><span class="step-info">Exemplo de Rótulo 3</span></button>
-                    <button class="step-progress-btn" role="option" aria-posinset="4" aria-setsize="5" type="button"><span class="step-info">Exemplo de Rótulo 4</span></button>
-                    <button class="step-progress-btn" role="option" aria-posinset="5" aria-setsize="5" type="button"><span class="step-info">Exemplo de Rótulo 5</span></button>
+                    <button class="step-progress-btn" role="option" aria-posinset="1" aria-setsize="5" type="button"><span class="step-info">Retângulo azul com a escrita Página 1 no centro</span></button>
+                    <button class="step-progress-btn" role="option" aria-posinset="2" aria-setsize="5" type="button"><span class="step-info">Retângulo rosa com a escrita Página 2 no centro</span></button>
+                    <button class="step-progress-btn" role="option" aria-posinset="3" aria-setsize="5" type="button"><span class="step-info">Retângulo amarelo com a escrita Página 3 no centro</span></button>
+                    <button class="step-progress-btn" role="option" aria-posinset="4" aria-setsize="5" type="button"><span class="step-info">Retângulo verde com a escrita Página 4 no centro</span></button>
+                    <button class="step-progress-btn" role="option" aria-posinset="5" aria-setsize="5" type="button"><span class="step-info">Retângulo laranja com a escrita Página 5 no centro</span></button>
                   </div>
                 </nav>
               </div>
@@ -89,6 +94,8 @@
     </div>
 
     <span class="br-divider sm my-3"></span>
+
+    <!--MINHA SAÚDE-->
 
     <div class="row">
       <div class="col-12 col-md-4">
@@ -133,39 +140,41 @@
 
     <span class="br-divider sm my-3"></span>
 
+    <!--MINI APPS-->
+
     <div class="row">
       <div class="col-12 col-md-4">
         <h2 class="titulo-grid-4">Mini Apps</h2>
       </div>
     </div>
 
-    <div class="links-category-content">
-      <div class="links-wrapper">
+    <div class="links-category-content mini-apps-content">
+      <div class="mini-apps-wrapper">
     
         <a href="#" class="links-content-wrapper">
-          <div class="link-box">
-            <i class="fas fa-user-md icon-link-box" aria-hidden="true"></i>
+          <div class="mini-apps-box">
+          <i class="fas fa-weight icon-mini-app" aria-hidden="true"></i>
           </div>
           <div class="text-weight-semi-bold text-up-01">Peso Saudável</div>
         </a>
 
         <a href="#" class="links-content-wrapper">
-          <div class="link-box">
-            <i class="fas fa-syringe icon-link-box" aria-hidden="true"></i>
+          <div class="mini-apps-box">
+            <i class="fas fa-viruses icon-mini-app" aria-hidden="true"></i>
           </div>
           <div class="text-weight-semi-bold text-up-01">Guia Pós-Covid</div>
         </a>
 
         <a href="#" class="links-content-wrapper">
-          <div class="link-box">
-            <i class="fas fa-vials icon-link-box" aria-hidden="true"></i>
+          <div class="mini-apps-box">
+            <i class="fas fa-hands-helping icon-mini-app" aria-hidden="true"></i>
           </div>
           <div class="text-weight-semi-bold text-up-01">Equidade SUS</div>
         </a>
 
         <a href="#" class="links-content-wrapper">
-          <div class="link-box">
-            <i class="fas fa-pills icon-link-box" aria-hidden="true"></i>
+          <div class="mini-apps-box">
+            <i class="fas fa-hand-holding-heart icon-mini-app" aria-hidden="true"></i>
           </div>
           <div class="text-weight-semi-bold text-up-01">Transplantes</div>
         </a>
@@ -175,6 +184,8 @@
     </div>
 
     <span class="br-divider sm my-3"></span>
+
+    <!--CONTEÚDO-->
 
     <div class="row">
       <div class="col-12 col-md-4">
@@ -190,17 +201,13 @@
               <div class="d-flex">
                 <div>
                   <div class="text-weight-semi-bold text-up-02">Doenças oculares</div>
-                  <div class="text-up-01">Doenças</div>
+                  <div class="text-up-01" aria-describedby="Categoria do conteúdo">Doenças</div>
                   <span class="br-tag bg-blue-warm-vivid-70 small" aria-describedby="densidade01"><span id="densidade01">Idosos</span></span>
-                </div>
-                <div class="ml-auto">
-                  <button class="br-button circle" type="button" aria-label="Ícone ilustrativo"><i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-                  </button>
                 </div>
               </div>
             </div>
             <div class="card-content">
-              <div class="card-img"><img src="https://images.pexels.com/photos/3373714/pexels-photo-3373714.jpeg" alt="Imagem de exemplo"/></div>
+              <div class="card-img"><img src=".\assets\image\olho.jpg" alt="Olho de pessoa"/></div>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore perferendis nam porro atque ex at, numquam non optio ab eveniet error vel ad exercitationem, earum et fugiat recusandae harum? Assumenda.</p>
             </div>
             <div class="card-footer">
@@ -209,9 +216,7 @@
                   <button class="br-button" type="button">Ver mais</button>
                 </div>
                 <div class="ml-auto">
-                  <button class="br-button circle" type="button" aria-label="Ícone ilustrativo"><i class="fas fa-heart" aria-hidden="true"></i>
-                  </button>
-                  <button class="br-button circle" type="button" aria-label="Ícone ilustrativo 3"><i class="fas fa-share-alt" aria-hidden="true"></i>
+                  <button class="br-button circle" type="button" aria-label="Compartilhar conteúdo"><i class="fas fa-share-alt" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -228,14 +233,10 @@
                   <div class="text-up-01">Doenças contagiosas</div>
                   <span class="br-tag bg-blue-warm-vivid-70 small" aria-describedby="densidade01"><span id="densidade01">Meio ambiente</span></span>
                 </div>
-                <div class="ml-auto">
-                  <button class="br-button circle" type="button" aria-label="Ícone ilustrativo"><i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-                  </button>
-                </div>
               </div>
             </div>
             <div class="card-content">
-              <div class="card-img"><img src="https://picsum.photos/id/0/500" alt="Imagem de exemplo"/></div>
+              <div class="card-img"><img src=".\assets\image\dengue.jpg" alt="Mosquito branco e preto"/></div>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore perferendis nam porro atque ex at, numquam non optio ab eveniet error vel ad exercitationem, earum et fugiat recusandae harum? Assumenda.</p>
             </div>
             <div class="card-footer">
@@ -244,9 +245,7 @@
                   <button class="br-button" type="button">Ver mais</button>
                 </div>
                 <div class="ml-auto">
-                  <button class="br-button circle" type="button" aria-label="Ícone ilustrativo"><i class="fas fa-heart" aria-hidden="true"></i>
-                  </button>
-                  <button class="br-button circle" type="button" aria-label="Ícone ilustrativo 3"><i class="fas fa-share-alt" aria-hidden="true"></i>
+                  <button class="br-button circle" type="button" aria-label="Compartilhar conteúdo"><i class="fas fa-share-alt" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -263,14 +262,10 @@
                   <div class="text-up-01">Atenção e cuidado</div>
                   <span class="br-tag bg-blue-warm-vivid-70 small" aria-describedby="densidade01"><span id="densidade01">Água</span></span>
                 </div>
-                <div class="ml-auto">
-                  <button class="br-button circle" type="button" aria-label="Ícone ilustrativo"><i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-                  </button>
-                </div>
               </div>
             </div>
             <div class="card-content">
-              <div class="card-img"><img src="https://picsum.photos/id/0/500" alt="Imagem de exemplo"/></div>
+              <div class="card-img"><img src=".\assets\image\enchente.jpg" alt="Cidade parcialmente coberta por água de enchente"/></div>
 
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore perferendis nam porro atque ex at, numquam non optio ab eveniet error vel ad exercitationem, earum et fugiat recusandae harum? Assumenda.</p>
             </div>
@@ -280,9 +275,7 @@
                   <button class="br-button" type="button">Ver mais</button>
                 </div>
                 <div class="ml-auto">
-                  <button class="br-button circle" type="button" aria-label="Ícone ilustrativo"><i class="fas fa-heart" aria-hidden="true"></i>
-                  </button>
-                  <button class="br-button circle" type="button" aria-label="Ícone ilustrativo 3"><i class="fas fa-share-alt" aria-hidden="true"></i>
+                  <button class="br-button circle" type="button" aria-label="Compartilhar conteúdo"><i class="fas fa-share-alt" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -299,14 +292,10 @@
                   <div class="text-up-01">Doenças</div>
                   <span class="br-tag bg-blue-warm-vivid-70 small" aria-describedby="densidade01"><span id="densidade01">Saúde mental</span></span>
                 </div>
-                <div class="ml-auto">
-                  <button class="br-button circle" type="button" aria-label="Ícone ilustrativo"><i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-                  </button>
-                </div>
               </div>
             </div>
             <div class="card-content">
-              <div class="card-img"><img src="https://picsum.photos/id/0/500" alt="Imagem de exemplo"/></div>
+              <div class="card-img"><img src=".\assets\image\depressao.jpg" alt="Mulher olhando para o mar enquanto está sentada na praia"/></div>
 
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore perferendis nam porro atque ex at, numquam non optio ab eveniet error vel ad exercitationem, earum et fugiat recusandae harum? Assumenda.</p>
             </div>
@@ -316,9 +305,7 @@
                   <button class="br-button" type="button">Ver mais</button>
                 </div>
                 <div class="ml-auto">
-                  <button class="br-button circle" type="button" aria-label="Ícone ilustrativo"><i class="fas fa-heart" aria-hidden="true"></i>
-                  </button>
-                  <button class="br-button circle" type="button" aria-label="Ícone ilustrativo 3"><i class="fas fa-share-alt" aria-hidden="true"></i>
+                  <button class="br-button circle" type="button" aria-label="Compartilhar conteúdo"><i class="fas fa-share-alt" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -331,6 +318,8 @@
     
     <span class="br-divider sm my-3"></span>
   
+    <br>
+
     <div class="text-center text-down-01">Você chegou ao fim do conteúdo desta tela.</div>
    
   </main>
@@ -347,3 +336,12 @@
 
 </body>
 </html>
+
+<!--
+Crédito das fotos
+
+Foto de Victor Freitas no Pexels: https://www.pexels.com/pt-br/foto/olho-de-pessoa-865711/
+Foto de Pixabay no Pexels: https://www.pexels.com/pt-br/foto/mosquito-branco-preto-86722/
+Foto de Pok Rie no Pexels: https://www.pexels.com/pt-br/foto/estrada-via-panorama-vista-14823600/
+Foto de Pixabay no Pexels: https://www.pexels.com/pt-br/foto/mulher-olhando-para-o-mar-enquanto-esta-sentada-na-praia-247314/
+-->
