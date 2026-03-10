@@ -1,0 +1,7 @@
+.info-label-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    row-gap: 0px;
+    column-gap: 16px;
+    width: 100%;
+}
