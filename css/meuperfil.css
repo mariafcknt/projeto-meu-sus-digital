@@ -5,3 +5,14 @@
     column-gap: 16px;
     width: 100%;
 }
+
+.sair-icon {
+    color: #e60000;
+}
+
+
+.page-wrapper {    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
