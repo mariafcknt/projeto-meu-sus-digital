@@ -1,8 +1,9 @@
 main {
     max-width: 100%;
+    padding: 1rem;
+    justify-content: center;
 }
 
 .page-wrapper {    
-    padding: 1rem;
-    justify-content: center;
+    
 }

@@ -78,7 +78,6 @@
 
     <button class="br-button block secondary mb-3" type="button"> <i class="fas fa-address-card" aria-hidden="true"></i>Cartão Nacional de Saúde</button>
 
-
     <div class="br-list" role="list">
       <div class="header">
         <div class="title">Conta e configurações</div>
@@ -211,25 +210,21 @@
             </button></div>
           </div>
         </div>
-
-        
-      
-        <br>
-
-        <div class="text-center text-down-01">Você chegou ao fim do conteúdo desta tela.</div>
       
     </div>
+
+    <div class="text-center text-down-01">Você chegou ao fim do conteúdo desta tela.</div>
    
   </main>
-                      
+
   <script src="./js/core.min.js"></script>
   <script>
-    const carouselList = []
-      for (const brCarousel of window.document.querySelectorAll('.br-carousel')) {
-        carouselList.push(new core.BRCarousel('br-carousel', brCarousel))
-      }
+    const inputList = []
+    for (const brInput of window.document.querySelectorAll('.br-input')) {
+      inputList.push(new core.BRInput('br-input', brInput))
+    }
   </script>
-
+                    
 </body>
 </html>
 
