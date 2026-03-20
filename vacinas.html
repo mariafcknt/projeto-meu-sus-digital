@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu SUS Digital - Vacinas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css"
+    />
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/vacinas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+
+ 
+<body>
+
+  <!--HEADER-->
+
+  <header class="br-header">
+    <div class="container-lg">
+        <div class="header-top">
+        <div class="header-logo"><img src="\assets\logo.svg" alt="Logo do Governo do Brasil">
+            <div class="br-list">
+            <div class="header">
+              <div class="title text-weight-semi-bold text-up-02">Vacinas</div>
+            </div>
+      </div>
+  </header>   
+
+  <main>
+
+    <div class="banner-vacinacao">
+      <div class="banner-text">
+        <div class="text-weight-regular text-up-01">Acesse aqui a sua</div>
+        <div class="text-weight-semi-bold text-up-02">Carteira Nacional de Vacinação</div>
+        <button class="br-button primary block dark-mode" type="button">
+          <i class="fas fa-chevron-right" aria-hidden="true"></i>Acessar
+        </button>
+      </div>
+      <img src="./assets/vacina.svg" class="banner-img" alt="Ilustração de frasco e seringa de vacina"/>
+    </div>
+
+    
+    <div class="br-tab">
+        <nav class="tab-nav">
+            <ul>
+            <li class="tab-item active">
+                <button type="button" data-panel="panel-1"><span class="name">Sobre</span></button>
+            </li>
+            <li class="tab-item">
+                <button type="button" data-panel="panel-2"><span class="name">Todos</span></button>
+            </li>
+            </ul>
+        </nav>
+    </div>
+
+
+  
+    <br>
+
+    <div class="text-center text-down-01">Você chegou ao fim do conteúdo desta tela.</div>
+   
+  </main>
+
+                      
+  <script src="./js/core.min.js"></script>
+  <script>
+    const abasList = []
+        for (const brTab of window.document.querySelectorAll('.br-tab')) {
+            abasList.push(new core.BRTab('br-tab', brTab))
+        }
+  </script>
+
+</body>
+</html>
+
+<!--
+Créditos
+
+vaccine record by VectorVibe Designs from <a href="https://thenounproject.com/browse/icons/term/vaccine-record/" target="_blank" title="vaccine record Icons">Noun Project</a> (CC BY 3.0)
+-->

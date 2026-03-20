@@ -1,0 +1,42 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.banner-vacinacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0c326f;
+    border-radius: 12px;
+    padding: 24px 24px;
+    width: 100%;
+    overflow: hidden;
+    gap: 1rem; /* gap mínimo entre texto e imagem */
+    color: white;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;        /* gap entre p e strong */
+    flex: 1;
+    min-width: 0; 
+}
+
+.i {
+    flex-shrink: 1;   /* permite encolher quando não há espaço */
+    min-width: 0;
+    max-height: 120px;
+    width: clamp(60px, 40%, 160px); /* mínimo 60px, ideal 20% do banner, máximo 160px */
+    height: auto;
+    object-fit: contain;
+}
+
+.banner-text button {
+    margin-top: 16px;
+    align-self: flex-start;
+    max-width: 80%; /* botão só ocupa o tamanho do conteúdo */
+}
