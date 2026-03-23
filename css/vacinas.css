@@ -41,7 +41,7 @@ main {
     max-width: 80%; /* botão só ocupa o tamanho do conteúdo */
 }
 
-.documentos-content {
+.tab-content-wrapper {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -103,8 +103,6 @@ main {
     color: #1351b4;
 }
 
-
-
 .vacinas-card-footer {
     display: flex;
     justify-content: flex-end;
@@ -135,4 +133,58 @@ main {
 
 .info-card a:hover {
     color: #0c326f;
+}
+
+.doses-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.dose-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.dose-item:last-child {
+    border-bottom: none;
+}
+
+.dose-icon {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #edf2fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dose-icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.dose-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.dose-icon .fa-syringe {
+    font-size: 1.5rem;
+    color: #0c326f;
+}
+
+.tab-content {
+    padding-bottom: 2rem;
 }
