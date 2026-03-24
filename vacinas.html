@@ -144,10 +144,60 @@
                       <span class="text-weight-semi-bold text-up-01">2ª Dose</span>
                       <p>18/11/2021</p>
                     </div>
-                    <button class="br-button medium" type="button">Mais detalhes</button>
+
+                    <div class="br-scrim-util foco" id="scrim-duvidas" data-scrim="true">
+                      <div class="br-modal large" aria-labelledby="modal-duvidas-title">
+                        <div class="br-modal-header">
+                          <div class="modal-title" id="modal-duvidas-title">1° Dose - Vacina Covid-19, RNAm, Pfizer (Comirnaty)</div>
+                          <button class="br-button close circle" type="button" aria-label="Fechar">
+                            <i class="fas fa-times" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                        <div class="br-modal-body">
+
+                          <div class="info-label">
+                            <div class="text-weight-medium text-up-01">Dose</div>
+                            <p>1° dose</p>
+                          </div>
+
+                          <div class="info-label">
+                            <div class="text-weight-medium text-up-01">Data</div>
+                            <p>23/09/2021</p>
+                          </div>
+
+                          <div class="info-label">
+                            <div class="text-weight-medium text-up-01">Fabricante</div>
+                            <p>PFIZER</p>
+                          </div>
+
+                          <div class="info-label">
+                            <div class="text-weight-medium text-up-01">Lote</div>
+                            <p>AA1122</p>
+                          </div>
+
+                          <div class="info-label">
+                            <div class="text-weight-medium text-up-01">Estabelecimento de saúde</div>
+                            <p>2511444 - SAE UNIDADE SANITARIA - JOINVILLE / SC</p>
+                          </div>
+
+                          <div class="info-label">
+                            <div class="text-weight-medium text-up-01">Vacinador</div>
+                            <p>70800804428727</p>
+                          </div>
+                          
+                        </div>
+                        <div class="br-modal-footer justify-content-end">
+                          <button class="br-button primary" type="button">Fechar</button>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="br-button medium" type="button" id="btn-mais-detalhes">Mais detalhes</button>
                   </li>
 
                 </ul>
+
+                
+
               </div>
             </div>
 
@@ -180,6 +230,22 @@
     for (const brTab of window.document.querySelectorAll('.br-tab')) {
       abasList.push(new core.BRTab('br-tab', brTab))
     }
+
+    const btnMaisDetalhes = document.querySelector('#btn-mais-detalhes')
+      const modalScrim = document.querySelector('#scrim-duvidas')
+
+      const scrimInstance = new core.Scrim({
+        closeElement: '.br-button.close, .br-modal-footer .br-button',
+        trigger: modalScrim,
+        escEnable: true,
+        limitTabKey: true
+      })
+
+      btnMaisDetalhes.addEventListener('click', () => {
+        scrimInstance.showScrim()
+      })
+
+
   </script>
 
 </body>
