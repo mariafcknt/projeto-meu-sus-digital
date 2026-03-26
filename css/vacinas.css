@@ -189,3 +189,6 @@ main {
     padding-bottom: 2rem;
 }
 
+.br-modal {
+    width: 80%!important;
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu SUS Digital - Vacinas</title>
+  <link rel="stylesheet"
+    href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css" />
+  <link rel="stylesheet" href="css/core.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/vacinas-detalhes-cnv.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!--HEADER-->
+  <header class="br-header">
+    <div class="container-lg">
+      <div class="header-top">
+        <div class="header-logo"><img src="\assets\logo.svg" alt="Logo do Governo do Brasil">
+          <div class="br-list">
+            <div class="header">
+              <div class="title text-weight-semi-bold text-up-02">Vacinas</div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="row align-items-center title-screen">
+      <button class="br-button circle" type="button" aria-label="Ícone ilustrativo"><i class="fas fa-chevron-left" aria-hidden="true"></i>
+    </button>
+    <div class="title text-weight-semi-bold text-up-01">Detalhes do documento</div>
+    </div>
+
+    
+<div class="collapse-example">
+  <div class="br-list" role="list" data-sub="data-sub">
+    <div class="br-item" role="listitem" tabindex="0" data-toggle="collapse" data-target="c-l1">
+      <div class="content">
+        <div class="flex-fill text-weight-medium">Descrição da vacina</div><i class="fas fa-angle-down" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="br-list" id="c-l1" role="list" hidden="hidden" data-sub="data-sub">
+      <p class="col">The CSS justify-content property defines how the browser distributes space between and around content items along the main axis of a flex container or the inline axis of a grid container. It is set on the container element (the parent) to align its children.</p>
+           <span class="br-divider"></span>
+ 
+    </div>
+   
+
+
+  </main>  
+
+
+<script src="./js/core.min.js"></script>
+<script>
+const abasList = []
+for (const brTab of window.document.querySelectorAll('.br-tab')) {
+    abasList.push(new core.BRTab('br-tab', brTab))
+}
+
+const scrim1 = new core.Scrim({
+    closeElement: '.br-button.close, .br-modal-footer .br-button',
+    trigger: document.querySelector('#scrim-dose-1'),
+    escEnable: true,
+    limitTabKey: true
+})
+
+const scrim2 = new core.Scrim({
+    closeElement: '.br-button.close, .br-modal-footer .br-button',
+    trigger: document.querySelector('#scrim-dose-2'),
+    escEnable: true,
+    limitTabKey: true
+})
+
+document.querySelector('#btn-dose-1').addEventListener('click', () => scrim1.showScrim())
+document.querySelector('#btn-dose-2').addEventListener('click', () => scrim2.showScrim())
+</script>
+
+</body>
+
+</html>

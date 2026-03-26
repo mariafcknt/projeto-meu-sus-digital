@@ -13,11 +13,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-
 <body>
 
   <!--HEADER-->
-
   <header class="br-header">
     <div class="container-lg">
       <div class="header-top">
@@ -27,6 +25,8 @@
               <div class="title text-weight-semi-bold text-up-02">Vacinas</div>
             </div>
           </div>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -43,7 +43,6 @@
         alt="Ilustração de cor branca de formulário e seringa de vacina" />
     </div>
 
-
     <div class="br-tab">
       <nav class="tab-nav">
         <ul>
@@ -56,25 +55,24 @@
         </ul>
       </nav>
 
-      <!--Documentos-->
       <div class="tab-content">
-        <div class="tab-panel active" id="panel-1">
 
+        <!--Documentos-->
+        <div class="tab-panel active" id="panel-1">
           <div class="tab-content-wrapper cnv-conteiner">
             <div class="tab-section">
-
               <h1 class="text-up-02 text-weight-semi-bold">Carteira Nacional de Vacinação</h1>
-
               <a href="./detalhes-vacinas.html" class="vacinas-card"
                 aria-label="Suas vacinas - 1 Vacina. Última dose em 23/09/2021">
-
                 <div class="vacinas-card-main">
                   <span class="text-up-01 text-weight-semi-bold">Suas vacinas</span>
                   <div class="vacinas-card-right">
                     <div class="vacinas-card-info">
-                      <div class="d-flex align-items-center"><span class="br-tag bg-blue-warm-vivid-70 small"
-                          aria-describedby="tag-text01">
-                          <i class="fas fa-syringe" aria-hidden="true"></i><span id="tag-text01">1 Vacina</span></span>
+                      <div class="d-flex align-items-center">
+                        <span class="br-tag bg-blue-warm-vivid-70 small" aria-describedby="tag-text01">
+                          <i class="fas fa-syringe" aria-hidden="true"></i>
+                          <span id="tag-text01">1 Vacina</span>
+                        </span>
                       </div>
                       <p>Última dose em 23/09/2021</p>
                     </div>
@@ -86,143 +84,165 @@
 
             <span class="br-divider my-3"></span>
 
-            <div class="tab-content-wrapper">
-              <div class="tab-section">
-                <h1 class="text-up-02 text-weight-semi-bold">Certificado de vacinação nacional de Covid-19</h1>
-
-                <a href="./detalhes-vacinas.html" class="vacinas-card"
-                  aria-label="Suas vacinas - 1 Vacina. Última dose em 23/09/2021">
-                  <div class="vacinas-card-main">
-                    <span class="text-up-01 text-weight-semi-bold">Suas vacinas Covid-19</span>
-
-                    <div class="vacinas-card-right">
-                      <div class="vacinas-card-info">
-                        <div class="d-flex align-items-center"><span class="br-tag bg-blue-warm-vivid-70 small"
-                            aria-describedby="tag-text01">
-                            <i class="fas fa-syringe" aria-hidden="true"></i><span id="tag-text01">2 Doses</span></span>
-                        </div>
-                        <p>Última dose em 23/09/2021</p>
+            <div class="tab-section">
+              <h1 class="text-up-02 text-weight-semi-bold">Certificado de vacinação nacional de Covid-19</h1>
+              <a href="./detalhes-vacinas.html" class="vacinas-card"
+                aria-label="Suas vacinas Covid-19 - 2 Doses. Última dose em 23/09/2021">
+                <div class="vacinas-card-main">
+                  <span class="text-up-01 text-weight-semi-bold">Suas vacinas Covid-19</span>
+                  <div class="vacinas-card-right">
+                    <div class="vacinas-card-info">
+                      <div class="d-flex align-items-center">
+                        <span class="br-tag bg-blue-warm-vivid-70 small" aria-describedby="tag-text02">
+                          <i class="fas fa-syringe" aria-hidden="true"></i>
+                          <span id="tag-text02">2 Doses</span>
+                        </span>
                       </div>
-                      <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                      <p>Última dose em 23/09/2021</p>
                     </div>
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
                   </div>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
 
         <!--Histórico de vacinas-->
-        <div class="tab-content">
-          <div class="tab-panel" id="panel-2">
+        <div class="tab-panel" id="panel-2">
+          <div class="tab-content-wrapper cnv-conteiner">
+            <div class="tab-section">
+              <h1 class="text-up-02 text-weight-semi-bold">Histórico de vacinação</h1>
+              <span class="text-up-01 text-weight-semi-bold">Vacina Covid-19, RNAm, Pfizer (Comirnaty)</span>
 
-            <div class="tab-content-wrapper cnv-conteiner">
-              <div class="tab-section">
+              <ul class="doses-list" aria-label="Histórico de doses">
 
-                <h1 class="text-up-02 text-weight-semi-bold">Histórico de vacinação</h1>
+                <li class="dose-item">
+                  <div class="dose-icon" aria-hidden="true">
+                    <i class="fas fa-syringe" aria-hidden="true"></i>
+                  </div>
+                  <div class="dose-info">
+                    <span class="text-weight-semi-bold text-up-01">1ª Dose</span>
+                    <p>10/08/2021</p>
+                  </div>
+                  <button class="br-button medium" type="button" id="btn-dose-1">Mais detalhes</button>
+                </li>
 
-                <span class="text-up-01 text-weight-semi-bold">Vacina Covid-19, RNAm, Pfizer (Comirnaty)</span>
-
-                <ul class="doses-list" aria-label="Histórico de doses">
-
-                  <li class="dose-item">
-                    <div class="dose-icon" aria-hidden="true">
-                      <i class="fas fa-syringe" aria-hidden="true"></i>
-                    </div>
-                    <div class="dose-info">
-                      <span class="text-weight-semi-bold text-up-01">1ª Dose</span>
-                      <p>23/09/2021</p>
-                    </div>
-                    <button class="br-button medium" type="button">Mais detalhes</button>
-                  </li>
-
-                  <li class="dose-item">
-                    <div class="dose-icon" aria-hidden="true">
-                      <i class="fas fa-syringe" aria-hidden="true"></i>
-                    </div>
-                    <div class="dose-info">
-                      <span class="text-weight-semi-bold text-up-01">2ª Dose</span>
-                      <p>18/11/2021</p>
-                    </div>
-
-                    <div class="br-scrim-util foco" id="scrim-duvidas" data-scrim="true">
-                      <div class="br-modal large" aria-labelledby="modal-duvidas-title">
-                        <div class="br-modal-header">
-                          <div class="modal-title" id="modal-duvidas-title">1° Dose - Vacina Covid-19, RNAm, Pfizer (Comirnaty)</div>
-                          <button class="br-button close circle" type="button" aria-label="Fechar">
-                            <i class="fas fa-times" aria-hidden="true"></i>
-                          </button>
-                        </div>
-                        <div class="br-modal-body">
-
-                          <div class="info-label">
-                            <div class="text-weight-medium text-up-01">Dose</div>
-                            <p>1° dose</p>
-                          </div>
-
-                          <div class="info-label">
-                            <div class="text-weight-medium text-up-01">Data</div>
-                            <p>23/09/2021</p>
-                          </div>
-
-                          <div class="info-label">
-                            <div class="text-weight-medium text-up-01">Fabricante</div>
-                            <p>PFIZER</p>
-                          </div>
-
-                          <div class="info-label">
-                            <div class="text-weight-medium text-up-01">Lote</div>
-                            <p>AA1122</p>
-                          </div>
-
-                          <div class="info-label">
-                            <div class="text-weight-medium text-up-01">Estabelecimento de saúde</div>
-                            <p>2511444 - SAE UNIDADE SANITARIA - JOINVILLE / SC</p>
-                          </div>
-
-                          <div class="info-label">
-                            <div class="text-weight-medium text-up-01">Vacinador</div>
-                            <p>70800804428727</p>
-                          </div>
-                          
-                        </div>
-                        <div class="br-modal-footer justify-content-end">
-                          <button class="br-button primary" type="button">Fechar</button>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="br-button medium" type="button" id="btn-mais-detalhes">Mais detalhes</button>
-                  </li>
-
-                </ul>
-
-                
-
-              </div>
+                <li class="dose-item">
+                  <div class="dose-icon" aria-hidden="true">
+                    <i class="fas fa-syringe" aria-hidden="true"></i>
+                  </div>
+                  <div class="dose-info">
+                    <span class="text-weight-semi-bold text-up-01">2ª Dose</span>
+                    <p>23/09/2021</p>
+                  </div>
+                  <button class="br-button medium" type="button" id="btn-dose-2">Mais detalhes</button>
+                </li>
+              </ul>
+              
             </div>
-
           </div>
         </div>
-
       </div>
+    </div>
 
+    <div class="info-card">
+      <p class="text-weight-medium">Conheça a <strong>Cartilha de Vacinas</strong></p>
+      <p class="text-weight-medium">Saiba quando e quais vacinas você deve tomar.</p>
+      <button class="br-button medium" type="button">Acessar</button>
+    </div>
+    <br>
+    <div class="info-card">
+      <p class="text-weight-medium">Algum problema com suas vacinas Covid-19?</p>
+      <button class="br-button medium" type="button">Acessar</button>
+    </div>
 
-      <div class="info-card">
-        <p class="text-weight-medium">Conheça a <strong>Cartilha de Vacinas</strong></p>
-        <p class="text-weight-medium">Saiba quando e quais vacinas você deve tomar.</p>
-        <button class="br-button medium" type="button">Acessar</button>
-      </div>
-      <br>
-      <div class="info-card">
-        <p class="text-weight-medium">Algum problema com suas vacinas Covid-19?</p>
-        <button class="br-button medium" type="button">Acessar</button>
-      </div>
-
-      <br>
-
-      <div class="text-center text-down-01">Você chegou ao fim do conteúdo desta tela.</div>
+    <br>
+    <div class="text-center text-down-01">Você chegou ao fim do conteúdo desta tela.</div>
 
   </main>
+
+  <!-- Modal 1ª Dose -->
+  <div class="br-scrim-util foco" id="scrim-dose-1" data-scrim="true">
+    <div class="br-modal large" aria-modal="true" role="dialog" aria-labelledby="modal-dose-1-title">
+      <div class="br-modal-header">
+        <div class="modal-title" id="modal-dose-1-title">1° Dose - Vacina Covid-19, RNAm, Pfizer (Comirnaty)</div>
+        <button class="br-button close circle" type="button" aria-label="Fechar">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="br-modal-body">
+        <div class="info-label">
+          <div class="text-weight-medium text-up-01">Número da dose</div>
+          <p>1</p>
+        </div>
+        <div class="info-label">
+          <div class="text-weight-medium text-up-01">Data</div>
+          <p>10/08/2021</p>
+        </div>
+        <div class="info-label">
+          <div class="text-weight-medium text-up-01">Fabricante</div>
+          <p>PFIZER</p>
+        </div>
+        <div class="info-label">
+          <div class="text-weight-medium text-up-01">Lote</div>
+          <p>FF8844</p>
+        </div>
+        <div class="info-label">
+          <div class="text-weight-medium text-up-01">Estabelecimento de saúde</div>
+          <p>2511444 - UBS VILA NOVA - JOINVILLE / SC</p>
+        </div>
+        <div class="info-label">
+          <div class="text-weight-medium text-up-01">Vacinador</div>
+          <p>912345678901234</p>
+        </div>
+      </div>
+      <div class="br-modal-footer justify-content-end">
+        <button class="br-button primary" type="button">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2ª Dose -->
+  <div class="br-scrim-util foco" id="scrim-dose-2" data-scrim="true">
+    <div class="br-modal large" aria-modal="true" role="dialog" aria-labelledby="modal-dose-2-title">
+      <div class="br-modal-header">
+        <div class="modal-title" id="modal-dose-2-title">2° Dose - Vacina Covid-19, RNAm, Pfizer (Comirnaty)</div>
+        <button class="br-button close circle" type="button" aria-label="Fechar">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="br-modal-body">
+        <div class="info-label">
+          <div class="text-weight-medium text-up-01">Número da dose</div>
+          <p>2</p>
+        </div>
+        <div class="info-label">
+          <div class="text-weight-medium text-up-01">Data</div>
+          <p>23/09/2021</p>
+        </div>
+        <div class="info-label">
+          <div class="text-weight-medium text-up-01">Fabricante</div>
+          <p>PFIZER</p>
+        </div>
+        <div class="info-label">
+          <div class="text-weight-medium text-up-01">Lote</div>
+          <p>GG9955</p>
+        </div>
+        <div class="info-label">
+          <div class="text-weight-medium text-up-01">Estabelecimento de saúde</div>
+          <p>2511444 - UBS VILA NOVA - JOINVILLE / SC</p>
+        </div>
+        <div class="info-label">
+          <div class="text-weight-medium text-up-01">Vacinador</div>
+          <p>834729105638201</p>
+        </div>
+      </div>
+      <div class="br-modal-footer justify-content-end">
+        <button class="br-button primary" type="button">Fechar</button>
+      </div>
+    </div>
+  </div>
 
   <script src="./js/core.min.js"></script>
   <script>
@@ -231,29 +251,24 @@
       abasList.push(new core.BRTab('br-tab', brTab))
     }
 
-    const btnMaisDetalhes = document.querySelector('#btn-mais-detalhes')
-      const modalScrim = document.querySelector('#scrim-duvidas')
+    const scrim1 = new core.Scrim({
+      closeElement: '.br-button.close, .br-modal-footer .br-button',
+      trigger: document.querySelector('#scrim-dose-1'),
+      escEnable: true,
+      limitTabKey: true
+    })
 
-      const scrimInstance = new core.Scrim({
-        closeElement: '.br-button.close, .br-modal-footer .br-button',
-        trigger: modalScrim,
-        escEnable: true,
-        limitTabKey: true
-      })
+    const scrim2 = new core.Scrim({
+      closeElement: '.br-button.close, .br-modal-footer .br-button',
+      trigger: document.querySelector('#scrim-dose-2'),
+      escEnable: true,
+      limitTabKey: true
+    })
 
-      btnMaisDetalhes.addEventListener('click', () => {
-        scrimInstance.showScrim()
-      })
-
-
+    document.querySelector('#btn-dose-1').addEventListener('click', () => scrim1.showScrim())
+    document.querySelector('#btn-dose-2').addEventListener('click', () => scrim2.showScrim())
   </script>
 
 </body>
 
 </html>
-
-<!--
-Créditos
-
-vaccine record by VectorVibe Designs from <a href="https://thenounproject.com/browse/icons/term/vaccine-record/" target="_blank" title="vaccine record Icons">Noun Project</a> (CC BY 3.0)
--->
