@@ -1,0 +1,134 @@
+.header {
+    padding: 1rem;
+}
+
+.banner-exportar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    padding: 32px 24px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1351b4, #0c326f);
+    color: white;
+    width: 100%;
+}
+
+.banner-exportar-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-exportar-icon img {
+    width: 64px;  /* ajuste conforme necessário */
+    height: 64px;
+    object-fit: contain;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+h2 {
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.content-descricao-vacina {
+   display: flex;
+   flex-direction: column;
+}
+
+.content-descricao-vacina > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.detalhes, .minhas-doses {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.dose-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dose-card:hover {
+    background-color: #f5f5f5;
+}
+
+.dose-card:focus-visible {
+    outline: 3px solid #1351b4;
+    outline-offset: 2px;
+}
+
+.dose-card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dose-card-data {
+    color: #555555;
+    font-size: var(--font-size-scale-down-01);
+}
+
+.dose-card-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.dose-card-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #edf2fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1351b4;
+    flex-shrink: 0;
+}
+
+.dose-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.dose-card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dose-tag {
+    width: fit-content !important;
+}
