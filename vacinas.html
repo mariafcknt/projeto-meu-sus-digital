@@ -17,17 +17,40 @@
 
   <!--HEADER-->
   <header class="br-header">
-    <div class="container-lg">
-      <div class="header-top">
-        <div class="header-logo"><img src="\assets\logo.svg" alt="Logo do Governo do Brasil">
-          <div class="br-list">
-            <div class="header">
-              <div class="title text-weight-semi-bold text-up-02">Vacinas</div>
-            </div>
+  <div class="container-lg">
+    <div class="header-top">
+      <div class="header-logo">
+        <img src="\assets\logo.svg" alt="Logo do Governo do Brasil">
+        <div class="br-list">
+          <div class="header">
+            <div class="title text-weight-semi-bold text-up-02">Vacinas</div>
           </div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="br-button tertiary large" type="button" id="btn-ajuda-vacinas">Ajuda</button>
       </div>
     </div>
-  </header>
+  </div>
+</header>
+
+<!-- Modal Ajuda -->
+<div class="br-scrim-util foco" id="scrim-ajuda-vacinas" data-scrim="true">
+  <div class="br-modal large" aria-modal="true" role="dialog" aria-labelledby="modal-ajuda-title">
+    <div class="br-modal-header">
+      <div class="modal-title" id="modal-ajuda-title">Sobre Vacinas</div>
+      <button class="br-button close circle" type="button" aria-label="Fechar">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="br-modal-body">
+      <p>A área de Vacinas agrupa os <strong>registros de vacinação</strong> e possibilita a emissão dos documentos de comprovação vacinal: <strong>Carteira Nacional de Vacinação Digital; Certificado Internacional de Vacinação e Profilaxia de Febre Amarela e Certificado Nacional de Vacinação COVID-19.</strong> Os registros são integrados pelos sistemas de informação e enviados à Rede Nacional de Dados em Saúde (RNDS) <strong>em até 10 dias corridos</strong>. Atualmente são apresentados os registros de vacinas enviados pelo sistema e-SUS Atenção Primária à Saúde (e-SUS APS), pelo Sistema do Programa Nacional de Imunização SI-PNI e demais sistemas das esferas estaduais e municipais integrados à RNDS.</p>
+    </div>
+    <div class="br-modal-footer justify-content-end">
+      <button class="br-button primary" type="button">Fechar</button>
+    </div>
+  </div>
+</div>
 
   <main>
 
@@ -63,7 +86,7 @@
           <div class="tab-content-wrapper cnv-conteiner">
             <div class="tab-section">
               <h1 class="text-up-02 text-weight-semi-bold">Carteira Nacional de Vacinação</h1>
-              <a href="./detalhes-vacinas.html" class="vacinas-card"
+              <a href="./vacinas-detalhes-cnv.html" class="vacinas-card"
                 aria-label="Suas vacinas - 1 Vacina. Última dose em 23/09/2021">
                 <div class="vacinas-card-main">
                   <span class="text-up-01 text-weight-semi-bold">Suas vacinas</span>
@@ -87,7 +110,7 @@
 
             <div class="tab-section">
               <h1 class="text-up-02 text-weight-semi-bold">Certificado de vacinação nacional de Covid-19</h1>
-              <a href="./detalhes-vacinas.html" class="vacinas-card"
+              <a href="./vacinas-detalhes-covid.html" class="vacinas-card"
                 aria-label="Suas vacinas Covid-19 - 2 Doses. Última dose em 23/09/2021">
                 <div class="vacinas-card-main">
                   <span class="text-up-01 text-weight-semi-bold">Suas vacinas Covid-19</span>
@@ -147,15 +170,16 @@
       </div>
     </div>
 
-    <div class="info-card">
-      <p class="text-weight-medium">Conheça a <strong>Cartilha de Vacinas</strong></p>
-      <p class="text-weight-medium">Saiba quando e quais vacinas você deve tomar.</p>
-      <button class="br-button medium" type="button">Acessar</button>
-    </div>
-    <br>
-    <div class="info-card">
-      <p class="text-weight-medium">Algum problema com suas vacinas Covid-19?</p>
-      <button class="br-button medium" type="button">Acessar</button>
+    <div class="info-cards-container">
+      <div class="info-card">
+        <p class="text-weight-medium">Conheça a <strong>Cartilha de Vacinas</strong></p>
+        <p class="text-weight-medium">Saiba quando e quais vacinas você deve tomar.</p>
+        <button class="br-button large" type="button">Acessar</button>
+      </div>
+      <div class="info-card">
+        <p class="text-weight-medium">Algum problema com suas vacinas Covid-19?</p>
+        <button class="br-button large" type="button">Acessar</button>
+      </div>
     </div>
 
     <br>
@@ -163,12 +187,35 @@
 
   </main>
 
+  <nav class="navbar-app" aria-label="Navegação principal">
+    <a href="./index.html" class="navbar-item active" aria-current="page">
+      <i class="fas fa-home" aria-hidden="true"></i>
+      <span class="navbar-item-label text-weight-medium text-up-01">Início</span>
+    </a>
+    <a href="./aplicacoes.html" class="navbar-item">
+      <i class="fas fa-th-large" aria-hidden="true"></i>
+      <span class="navbar-item-label text-up-01">Aplicações</span>
+    </a>
+    <a href="./acoes.html" class="navbar-item navbar-item-center" aria-label="Ações rápidas">
+      <img src="./assets/logo-sus-white.svg" alt="" aria-hidden="true" class="navbar-center-icon">
+      <span class="sr-only">Ações</span>
+    </a>
+    <a href="./conteudo.html" class="navbar-item">
+      <i class="fas fa-book" aria-hidden="true"></i>
+      <span class="navbar-item-label text-up-01">Conteúdo</span>
+    </a>
+    <a href="./meuperfil.html" class="navbar-item">
+      <i class="fas fa-user" aria-hidden="true"></i>
+      <span class="navbar-item-label text-up-01">Meu perfil</span>
+    </a>
+  </nav>
+
   <!-- Modal 1ª Dose -->
   <div class="br-scrim-util foco" id="scrim-dose-1" data-scrim="true">
     <div class="br-modal large" aria-modal="true" role="dialog" aria-labelledby="modal-dose-1-title">
       <div class="br-modal-header">
         <div class="modal-title" id="modal-dose-1-title">1° Dose - Vacina Covid-19, RNAm, Pfizer (Comirnaty)</div>
-        <button class="br-button close circle" type="button" aria-label="Fechar">
+        <button class="br-button close circle large" type="button" aria-label="Fechar">
           <i class="fas fa-times" aria-hidden="true"></i>
         </button>
       </div>
@@ -209,7 +256,7 @@
     <div class="br-modal large" aria-modal="true" role="dialog" aria-labelledby="modal-dose-2-title">
       <div class="br-modal-header">
         <div class="modal-title" id="modal-dose-2-title">2° Dose - Vacina Covid-19, RNAm, Pfizer (Comirnaty)</div>
-        <button class="br-button close circle" type="button" aria-label="Fechar">
+        <button class="br-button close circle large" type="button" aria-label="Fechar">
           <i class="fas fa-times" aria-hidden="true"></i>
         </button>
       </div>
@@ -252,6 +299,17 @@
       abasList.push(new core.BRTab('br-tab', brTab))
     }
 
+    const scrimAjuda = new core.Scrim({
+        closeElement: '.br-button.close, .br-modal-footer .br-button',
+        trigger: document.querySelector('#scrim-ajuda-vacinas'),
+        escEnable: true,
+        limitTabKey: true
+      })
+
+      document.querySelector('#btn-ajuda-vacinas').addEventListener('click', () => {
+        scrimAjuda.showScrim()
+      })
+
     const scrim1 = new core.Scrim({
       closeElement: '.br-button.close, .br-modal-footer .br-button',
       trigger: document.querySelector('#scrim-dose-1'),
@@ -268,6 +326,17 @@
 
     document.querySelector('#btn-dose-1').addEventListener('click', () => scrim1.showScrim())
     document.querySelector('#btn-dose-2').addEventListener('click', () => scrim2.showScrim())
+
+    const navItems = document.querySelectorAll('.navbar-item')
+      const currentPage = window.location.pathname.split('/').pop()
+
+      navItems.forEach(item => {
+        const itemPage = item.getAttribute('href').split('/').pop()
+        if (itemPage === currentPage) {
+          item.classList.add('active')
+          item.setAttribute('aria-current', 'page')
+        }
+      })
   </script>
 
 </body>
