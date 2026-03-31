@@ -190,23 +190,23 @@
   <nav class="navbar-app" aria-label="Navegação principal">
     <a href="./index.html" class="navbar-item active" aria-current="page">
       <i class="fas fa-home" aria-hidden="true"></i>
-      <span class="navbar-item-label text-weight-medium text-up-01">Início</span>
+      <p class="text-weight-medium">Início</p>
     </a>
     <a href="./aplicacoes.html" class="navbar-item">
       <i class="fas fa-th-large" aria-hidden="true"></i>
-      <span class="navbar-item-label text-up-01">Aplicações</span>
+      <p class="text-weight-medium">Aplicações</p>
     </a>
-    <a href="./acoes.html" class="navbar-item navbar-item-center" aria-label="Ações rápidas">
+    <a href="./vacinas.html" class="navbar-item navbar-item-center" aria-label="Ações rápidas">
       <img src="./assets/logo-sus-white.svg" alt="" aria-hidden="true" class="navbar-center-icon">
       <span class="sr-only">Ações</span>
     </a>
     <a href="./conteudo.html" class="navbar-item">
       <i class="fas fa-book" aria-hidden="true"></i>
-      <span class="navbar-item-label text-up-01">Conteúdo</span>
+      <p class="text-weight-medium">Conteúdo</p>
     </a>
     <a href="./meuperfil.html" class="navbar-item">
       <i class="fas fa-user" aria-hidden="true"></i>
-      <span class="navbar-item-label text-up-01">Meu perfil</span>
+      <p class="text-weight-medium">Perfil</p>
     </a>
   </nav>
 
@@ -328,15 +328,22 @@
     document.querySelector('#btn-dose-2').addEventListener('click', () => scrim2.showScrim())
 
     const navItems = document.querySelectorAll('.navbar-item')
-      const currentPage = window.location.pathname.split('/').pop()
+    const currentPath = window.location.pathname
 
-      navItems.forEach(item => {
-        const itemPage = item.getAttribute('href').split('/').pop()
-        if (itemPage === currentPage) {
-          item.classList.add('active')
-          item.setAttribute('aria-current', 'page')
-        }
-      })
+    navItems.forEach(item => {
+      const itemHref = item.getAttribute('href')
+
+      // remove ./ do href para comparar
+      const itemPath = itemHref.replace('./', '/')
+
+      if (currentPath.endsWith(itemPath)) {
+        item.classList.add('active')
+        item.setAttribute('aria-current', 'page')
+      } else {
+        item.classList.remove('active')
+        item.removeAttribute('aria-current')
+      }
+    })
   </script>
 
 </body>

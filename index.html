@@ -30,7 +30,7 @@
       </div>
   </header>   
 
-  <main class="page-wrapper">
+  <main>
 
     <!--CARROSSEL-->
 
@@ -324,6 +324,29 @@
    
   </main>
 
+  <nav class="navbar-app" aria-label="Navegação principal">
+    <a href="./index.html" class="navbar-item active" aria-current="page">
+      <i class="fas fa-home" aria-hidden="true"></i>
+      <p class="text-weight-medium">Início</p>
+    </a>
+    <a href="./aplicacoes.html" class="navbar-item">
+      <i class="fas fa-th-large" aria-hidden="true"></i>
+      <p class="text-weight-medium">Aplicações</p>
+    </a>
+    <a href="./vacinas.html" class="navbar-item navbar-item-center" aria-label="Ações rápidas">
+      <img src="./assets/logo-sus-white.svg" alt="" aria-hidden="true" class="navbar-center-icon">
+      <span class="sr-only">Ações</span>
+    </a>
+    <a href="./conteudo.html" class="navbar-item">
+      <i class="fas fa-book" aria-hidden="true"></i>
+      <p class="text-weight-medium">Conteúdo</p>
+    </a>
+    <a href="./meuperfil.html" class="navbar-item">
+      <i class="fas fa-user" aria-hidden="true"></i>
+      <p class="text-weight-medium">Perfil</p>
+    </a>
+  </nav>
+
                       
   <script src="./js/core.min.js"></script>
   <script>
@@ -331,6 +354,28 @@
       for (const brCarousel of window.document.querySelectorAll('.br-carousel')) {
         carouselList.push(new core.BRCarousel('br-carousel', brCarousel))
       }
+
+      const navItems = document.querySelectorAll('.navbar-item')
+      const currentPath = window.location.pathname
+
+       
+
+      navItems.forEach(item => {
+        const itemHref = item.getAttribute('href')
+        
+        // remove ./ do href para comparar
+        const itemPath = itemHref.replace('./', '/')
+        
+console.log('comparando:', currentPath, 'com', itemPath)
+
+        if (currentPath.endsWith(itemPath)) {
+          item.classList.add('active')
+          item.setAttribute('aria-current', 'page')
+        } else {
+          item.classList.remove('active')
+          item.removeAttribute('aria-current')
+        }
+      })
   </script>
 
 </body>
