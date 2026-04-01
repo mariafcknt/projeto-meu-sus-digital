@@ -187,28 +187,8 @@
 
   </main>
 
-  <nav class="navbar-app" aria-label="Navegação principal">
-    <a href="./index.html" class="navbar-item active" aria-current="page">
-      <i class="fas fa-home" aria-hidden="true"></i>
-      <p class="text-weight-medium">Início</p>
-    </a>
-    <a href="./aplicacoes.html" class="navbar-item">
-      <i class="fas fa-th-large" aria-hidden="true"></i>
-      <p class="text-weight-medium">Aplicações</p>
-    </a>
-    <a href="./vacinas.html" class="navbar-item navbar-item-center" aria-label="Ações rápidas">
-      <img src="./assets/logo-sus-white.svg" alt="" aria-hidden="true" class="navbar-center-icon">
-      <span class="sr-only">Ações</span>
-    </a>
-    <a href="./conteudo.html" class="navbar-item">
-      <i class="fas fa-book" aria-hidden="true"></i>
-      <p class="text-weight-medium">Conteúdo</p>
-    </a>
-    <a href="./meuperfil.html" class="navbar-item">
-      <i class="fas fa-user" aria-hidden="true"></i>
-      <p class="text-weight-medium">Perfil</p>
-    </a>
-  </nav>
+  <div id="navbar-container"></div>
+  <script src="./js/navbar.js"></script>
 
   <!-- Modal 1ª Dose -->
   <div class="br-scrim-util foco" id="scrim-dose-1" data-scrim="true">
@@ -246,7 +226,7 @@
         </div>
       </div>
       <div class="br-modal-footer justify-content-end">
-        <button class="br-button primary" type="button">Fechar</button>
+        <button class="br-button primary large" type="button">Fechar</button>
       </div>
     </div>
   </div>
@@ -287,7 +267,7 @@
         </div>
       </div>
       <div class="br-modal-footer justify-content-end">
-        <button class="br-button primary" type="button">Fechar</button>
+        <button class="br-button primary large" type="button">Fechar</button>
       </div>
     </div>
   </div>

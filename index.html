@@ -104,38 +104,7 @@
     </div>
 
     <div class="links-category-content">
-      <div class="links-wrapper">
-    
-        <a href="#" class="links-content-wrapper">
-          <div class="link-box">
-            <i class="fas fa-user-md icon-link-box" aria-hidden="true"></i>
-          </div>
-          <div class="text-weight-semi-bold text-up-01">Agora tem especialistas</div>
-        </a>
-
-        <a href="#" class="links-content-wrapper">
-          <div class="link-box">
-            <i class="fas fa-syringe icon-link-box" aria-hidden="true"></i>
-          </div>
-          <div class="text-weight-semi-bold text-up-01">Vacinas</div>
-        </a>
-
-        <a href="#" class="links-content-wrapper">
-          <div class="link-box">
-            <i class="fas fa-vials icon-link-box" aria-hidden="true"></i>
-          </div>
-          <div class="text-weight-semi-bold text-up-01">Exames</div>
-        </a>
-
-        <a href="#" class="links-content-wrapper">
-          <div class="link-box">
-            <i class="fas fa-pills icon-link-box" aria-hidden="true"></i>
-          </div>
-          <div class="text-weight-semi-bold text-up-01">Medicamentos</div>
-        </a>
-      </div>
-
-      <button class="br-button block secondary mb-3" type="button"> <i class="fas fa-angle-right" aria-hidden="true"></i>Ver tudo</button>
+      <div class="links-wrapper" id="links-saude-container" data-limite="4"></div>
     </div>
 
     <span class="br-divider sm my-3"></span>
@@ -149,39 +118,39 @@
     </div>
 
     <div class="links-category-content mini-apps-content">
-      <div class="mini-apps-wrapper">
+      <div class="links-wrapper" id="mini-apps-container">
     
-        <a href="#" class="links-content-wrapper">
-          <div class="mini-apps-box">
-          <i class="fas fa-weight icon-mini-app" aria-hidden="true"></i>
+        <a href="#" class="links-content-wrapper" aria-label="Peso Saudável">
+          <div class="link-box link-box--gradient">
+            <i class="fas fa-weight icon-link-box" aria-hidden="true"></i>
           </div>
-          <div class="text-weight-semi-bold text-up-01">Peso Saudável</div>
+          <p class="text-weight-semi-bold text-up-01">Peso Saudável</p>
         </a>
-
-        <a href="#" class="links-content-wrapper">
-          <div class="mini-apps-box">
-            <i class="fas fa-viruses icon-mini-app" aria-hidden="true"></i>
+    
+        <a href="#" class="links-content-wrapper" aria-label="Guia Pós-Covid">
+          <div class="link-box link-box--gradient">
+            <i class="fas fa-viruses icon-link-box" aria-hidden="true"></i>
           </div>
-          <div class="text-weight-semi-bold text-up-01">Guia Pós-Covid</div>
+          <p class="text-weight-semi-bold text-up-01">Guia Pós-Covid</p>
         </a>
-
-        <a href="#" class="links-content-wrapper">
-          <div class="mini-apps-box">
-            <i class="fas fa-hands-helping icon-mini-app" aria-hidden="true"></i>
+    
+        <a href="#" class="links-content-wrapper" aria-label="Equidade SUS">
+          <div class="link-box link-box--gradient">
+            <i class="fas fa-hands-helping icon-link-box" aria-hidden="true"></i>
           </div>
-          <div class="text-weight-semi-bold text-up-01">Equidade SUS</div>
+          <p class="text-weight-semi-bold text-up-01">Equidade SUS</p>
         </a>
-
-        <a href="#" class="links-content-wrapper">
-          <div class="mini-apps-box">
-            <i class="fas fa-hand-holding-heart icon-mini-app" aria-hidden="true"></i>
+    
+        <a href="#" class="links-content-wrapper" aria-label="Transplantes">
+          <div class="link-box link-box--gradient">
+            <i class="fas fa-hand-holding-heart icon-link-box" aria-hidden="true"></i>
           </div>
-          <div class="text-weight-semi-bold text-up-01">Transplantes</div>
+          <p class="text-weight-semi-bold text-up-01">Transplantes</p>
         </a>
       </div>
-
-      <button class="br-button block secondary mb-3" type="button"> <i class="fas fa-angle-right" aria-hidden="true"></i>Ver tudo</button>
     </div>
+
+    <button class="br-button block secondary mb-3" type="button"> <i class="fas fa-angle-right" aria-hidden="true"></i>Ver tudo</button>
 
     <span class="br-divider sm my-3"></span>
 
@@ -315,8 +284,7 @@
       </div>
       <button class="br-button block secondary mb-3" type="button"> <i class="fas fa-angle-right" aria-hidden="true"></i>Ver tudo</button>
     </div> 
-    
-    <span class="br-divider sm my-3"></span>
+
   
     <br>
 
@@ -324,60 +292,18 @@
    
   </main>
 
-  <nav class="navbar-app" aria-label="Navegação principal">
-    <a href="./index.html" class="navbar-item active" aria-current="page">
-      <i class="fas fa-home" aria-hidden="true"></i>
-      <p class="text-weight-medium">Início</p>
-    </a>
-    <a href="./aplicacoes.html" class="navbar-item">
-      <i class="fas fa-th-large" aria-hidden="true"></i>
-      <p class="text-weight-medium">Aplicações</p>
-    </a>
-    <a href="./vacinas.html" class="navbar-item navbar-item-center" aria-label="Ações rápidas">
-      <img src="./assets/logo-sus-white.svg" alt="" aria-hidden="true" class="navbar-center-icon">
-      <span class="sr-only">Ações</span>
-    </a>
-    <a href="./conteudo.html" class="navbar-item">
-      <i class="fas fa-book" aria-hidden="true"></i>
-      <p class="text-weight-medium">Conteúdo</p>
-    </a>
-    <a href="./meuperfil.html" class="navbar-item">
-      <i class="fas fa-user" aria-hidden="true"></i>
-      <p class="text-weight-medium">Perfil</p>
-    </a>
-  </nav>
+  <div id="navbar-container"></div>
+  <script src="./js/navbar.js"></script>
 
-                      
+  <script src="./js/link-saude.js"></script>  
+                
   <script src="./js/core.min.js"></script>
   <script>
     const carouselList = []
       for (const brCarousel of window.document.querySelectorAll('.br-carousel')) {
         carouselList.push(new core.BRCarousel('br-carousel', brCarousel))
       }
-
-      const navItems = document.querySelectorAll('.navbar-item')
-      const currentPath = window.location.pathname
-
-       
-
-      navItems.forEach(item => {
-        const itemHref = item.getAttribute('href')
-        
-        // remove ./ do href para comparar
-        const itemPath = itemHref.replace('./', '/')
-        
-console.log('comparando:', currentPath, 'com', itemPath)
-
-        if (currentPath.endsWith(itemPath)) {
-          item.classList.add('active')
-          item.setAttribute('aria-current', 'page')
-        } else {
-          item.classList.remove('active')
-          item.removeAttribute('aria-current')
-        }
-      })
   </script>
-
 </body>
 </html>
 
