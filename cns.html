@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu SUS Digital - Cartão Nacional de Saúde</title>
+  <link rel="stylesheet"
+    href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css" />
+  <link rel="stylesheet" href="css/core.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cns.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  
+
+  <main>
+        <div id="header-container" data-tipo="interno" data-titulo="Cartão Nacional de Saúde" data-voltar="./meuperfil.html"></div>
+
+
+<div class="br-carousel" data-circular="true" aria-hidden="true" aria-roledescription="carousel">
+  <div class="carousel-button">
+    <button class="br-button carousel-btn-prev terciary circle" type="button" aria-label="Anterior">
+      <i class="fas fa-chevron-left" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <div class="carousel-stage shadow-sm">
+
+    <div class="carousel-page" role="group" aria-roledescription="slide" aria-live="polite">
+      <div class="carousel-content cartao-frente">
+        <div class="cartao-sus-texto">
+          <p class="cartao-nome-frente">Emilly Rosa Campos</p>
+          <p class="cartao-numero-frente">Nº 761266276041208</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-page" active="active" role="group" aria-roledescription="slide" aria-live="polite">
+      <div class="carousel-content cartao-verso">
+        <div class="cartao-bandeira"></div>
+        <div class="cartao-foto">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="cartao-dados">
+          <p class="cartao-nome">Emilly Rosa Campos</p>
+          <p class="cartao-cns">CNS 761266276041208</p>
+          <p class="cartao-cpf">CPF 08809845110</p>
+          <div class="cartao-qrcode">
+            <picture src="./assets/qrcode.svg"></picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="carousel-button">
+    <button class="br-button carousel-btn-next terciary circle" type="button" aria-label="Próximo">
+      <i class="fas fa-chevron-right" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <div class="carousel-step">
+    <nav class="br-step" data-initial="1" data-type="simple" role="none">
+      <div class="step-progress" role="listbox" aria-orientation="horizontal" aria-label="Lista de Opções">
+        <button class="step-progress-btn" role="option" aria-posinset="1" aria-setsize="2" type="button">
+          <span class="step-info">Verso</span>
+        </button>
+        <button class="step-progress-btn" role="option" aria-posinset="2" aria-setsize="2" type="button">
+          <span class="step-info">Frente</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+  </main>
+
+  <div id="navbar-container"></div>
+
+  <script src="./js/core.min.js"></script>
+  <script src="./js/navbar.js"></script>
+  <script src="./js/header.js"></script>
+  <script>
+    const carouselList = []
+    for (const brCarousel of document.querySelectorAll('.br-carousel')) {
+      carouselList.push(new core.BRCarousel('br-carousel', brCarousel))
+    }
+  </script>
+
+</body>
+
+</html>
