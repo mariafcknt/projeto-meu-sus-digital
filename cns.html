@@ -18,67 +18,89 @@
   
 
   <main>
-        <div id="header-container" data-tipo="interno" data-titulo="Cartão Nacional de Saúde" data-voltar="./meuperfil.html"></div>
-
-
-<div class="br-carousel" data-circular="true" aria-hidden="true" aria-roledescription="carousel">
-  <div class="carousel-button">
-    <button class="br-button carousel-btn-prev terciary circle" type="button" aria-label="Anterior">
-      <i class="fas fa-chevron-left" aria-hidden="true"></i>
-    </button>
-  </div>
-
-  <div class="carousel-stage shadow-sm">
-
-    <div class="carousel-page" role="group" aria-roledescription="slide" aria-live="polite">
-      <div class="carousel-content cartao-frente">
-        <div class="cartao-sus-texto">
-          <p class="cartao-nome-frente">Emilly Rosa Campos</p>
-          <p class="cartao-numero-frente">Nº 761266276041208</p>
-        </div>
-      </div>
+    <div id="header-container" data-tipo="interno" data-titulo="Cartão Nacional de Saúde" data-voltar="./meuperfil.html">
     </div>
-
-    <div class="carousel-page" active="active" role="group" aria-roledescription="slide" aria-live="polite">
-      <div class="carousel-content cartao-verso">
-        <div class="cartao-bandeira"></div>
-        <div class="cartao-foto">
-          <i class="fas fa-user"></i>
-        </div>
-        <div class="cartao-dados">
-          <p class="cartao-nome">Emilly Rosa Campos</p>
-          <p class="cartao-cns">CNS 761266276041208</p>
-          <p class="cartao-cpf">CPF 08809845110</p>
-          <div class="cartao-qrcode">
-            <picture src="./assets/qrcode.svg"></picture>
+  
+    <div class="br-carousel" data-circular="true" aria-hidden="true" aria-roledescription="carousel">
+      <div class="carousel-button">
+        <button class="br-button carousel-btn-prev terciary circle" type="button" aria-label="Anterior">
+          <i class="fas fa-chevron-left" aria-hidden="true"></i>
+        </button>
+      </div>
+  
+      <div class="carousel-stage shadow-lg">
+  
+        <div class="carousel-page" active="active" role="group" aria-roledescription="slide" aria-live="polite">
+          <div class="carousel-content cartao-frente">
+            <div class="cartao-frente-logo">
+              <img src="./assets/logo-sus-white.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="cartao-sus-texto">
+              <p class="cartao-nome-frente">Emilly Rosa Campos</p>
+              <p class="cartao-numero-frente">Nº 761266276041208</p>
+            </div>
           </div>
         </div>
+  
+        <div class="carousel-page" role="group" aria-roledescription="slide" aria-live="polite">
+          <div class="carousel-content cartao-verso">
+            <div class="cartao-bandeira"></div>
+            <div class="cartao-foto">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="cartao-dados">
+              <p class="cartao-nome">Emilly Rosa Campos</p>
+              <p class="cartao-cns">CNS 761266276041208</p>
+              <p class="cartao-cpf">CPF 08809845110</p>
+              <div class="cartao-qrcode">
+                <img src="./assets/qr-teste.svg"></img>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="carousel-button">
+        <button class="br-button carousel-btn-next terciary circle" type="button" aria-label="Próximo">
+          <i class="fas fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+  
+      <div class="carousel-step">
+        <nav class="br-step" data-initial="1" data-type="simple" role="none">
+          <div class="step-progress" role="listbox" aria-orientation="horizontal" aria-label="Lista de Opções">
+            <button class="step-progress-btn" role="option" aria-posinset="1" aria-setsize="2" type="button">
+              <span class="step-info">Verso</span>
+            </button>
+            <button class="step-progress-btn" role="option" aria-posinset="2" aria-setsize="2" type="button">
+              <span class="step-info">Frente</span>
+            </button>
+          </div>
+        </nav>
       </div>
     </div>
+  
+    <div class="info-container">
+      <h1 class="text-up-02 text-weight-semi-bold">Informações do cartão</h1>
 
-  </div>
-
-  <div class="carousel-button">
-    <button class="br-button carousel-btn-next terciary circle" type="button" aria-label="Próximo">
-      <i class="fas fa-chevron-right" aria-hidden="true"></i>
-    </button>
-  </div>
-
-  <div class="carousel-step">
-    <nav class="br-step" data-initial="1" data-type="simple" role="none">
-      <div class="step-progress" role="listbox" aria-orientation="horizontal" aria-label="Lista de Opções">
-        <button class="step-progress-btn" role="option" aria-posinset="1" aria-setsize="2" type="button">
-          <span class="step-info">Verso</span>
-        </button>
-        <button class="step-progress-btn" role="option" aria-posinset="2" aria-setsize="2" type="button">
-          <span class="step-info">Frente</span>
-        </button>
+      <div class="info-label">
+        <div class="text-weight-medium text-up-01">Nome completo</div>
+        <p>Emilly Rosa Campos</p>
       </div>
-    </nav>
-  </div>
-</div>
-
-
+      
+      <div class="info-label">
+        <div class="info-label">
+          <div class="text-weight-medium text-up-01">CNS</div>
+          <p>761266276041208</p>
+        </div>
+      
+        <div class="info-label">
+          <div class="text-weight-medium text-up-01">CPF</div>
+          <p>08809845110</p>
+        </div>
+      </div>
+  
   </main>
 
   <div id="navbar-container"></div>
