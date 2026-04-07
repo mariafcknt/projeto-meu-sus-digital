@@ -17,18 +17,7 @@
  
 <body>
 
-  <!--HEADER-->
-
-  <header class="br-header">
-    <div class="container-lg">
-        <div class="header-top">
-        <div class="header-logo"><img src="\assets\logo.svg" alt="Logo do Governo do Brasil">
-            <div class="br-list">
-            <div class="header">
-              <div class="title text-weight-semi-bold text-up-02">Meu Perfil</div>
-            </div>
-      </div>
-  </header>   
+  <div id="header-container" data-tipo="principal" data-titulo="Meu Perfil"></div>
 
   <main>
 
@@ -76,7 +65,7 @@
       </div>
     </div>
 
-    <button class="br-button block secondary mb-3" type="button"> <i class="fas fa-address-card" aria-hidden="true"></i>Cartão Nacional de Saúde</button>
+    <a href="./cns.html" class="br-button block secondary mb-3" type="button"> <i class="fas fa-address-card" aria-hidden="true"></i>Cartão Nacional de Saúde</a>
 
     <div class="br-list" role="list">
       <div class="header">
@@ -218,55 +207,10 @@
   </main>
 
   <div id="navbar-container"></div>
+
   <script src="./js/navbar.js"></script>
-
   <script src="./js/core.min.js"></script>
-  <script>
-    const inputList = []
-    for (const brInput of window.document.querySelectorAll('.br-input')) {
-      inputList.push(new core.BRInput('br-input', brInput))
-    }
-
-    const scrimCartao = new core.Scrim({
-  closeElement: '#btn-fechar-cartao',
-  trigger: document.querySelector('#scrim-cartao-sus'),
-  escEnable: true,
-  limitTabKey: true
-})
-
-document.querySelector('#btn-cartao-sus').addEventListener('click', () => {
-  scrimCartao.showScrim()
-})
-
-// atualiza os dots conforme o scroll
-const slider = document.querySelector('.cartao-sus-slider')
-const dots = document.querySelectorAll('.cartao-dot')
-
-slider.addEventListener('scroll', () => {
-  const index = Math.round(slider.scrollLeft / slider.offsetWidth)
-  dots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === index)
-    dot.setAttribute('aria-selected', i === index)
-  })
-})
-
-// clique nos dots navega para o slide
-dots.forEach((dot, index) => {
-  dot.addEventListener('click', () => {
-    slider.scrollTo({ left: index * slider.offsetWidth, behavior: 'smooth' })
-  })
-})
-
-  </script>
-                    
+  <script src="./js/header.js"></script>
+       
 </body>
 </html>
-
-<!--
-Crédito das fotos
-
-Foto de Victor Freitas no Pexels: https://www.pexels.com/pt-br/foto/olho-de-pessoa-865711/
-Foto de Pixabay no Pexels: https://www.pexels.com/pt-br/foto/mosquito-branco-preto-86722/
-Foto de Pok Rie no Pexels: https://www.pexels.com/pt-br/foto/estrada-via-panorama-vista-14823600/
-Foto de Pixabay no Pexels: https://www.pexels.com/pt-br/foto/mulher-olhando-para-o-mar-enquanto-esta-sentada-na-praia-247314/
--->

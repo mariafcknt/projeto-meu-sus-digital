@@ -1,4 +1,4 @@
-fetch('./links-saude.html')
+fetch('./components/links-saude.html')
   .then(response => response.text())
   .then(html => {
     const container = document.getElementById('links-saude-container')

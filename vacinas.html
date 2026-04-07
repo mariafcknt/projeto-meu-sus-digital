@@ -15,24 +15,7 @@
 
 <body>
 
-  <!--HEADER-->
-  <header class="br-header">
-  <div class="container-lg">
-    <div class="header-top">
-      <div class="header-logo">
-        <img src="\assets\logo.svg" alt="Logo do Governo do Brasil">
-        <div class="br-list">
-          <div class="header">
-            <div class="title text-weight-semi-bold text-up-02">Vacinas</div>
-          </div>
-        </div>
-      </div>
-      <div class="header-actions">
-        <button class="br-button tertiary large" type="button" id="btn-ajuda-vacinas">Ajuda</button>
-      </div>
-    </div>
-  </div>
-</header>
+  <div id="header-container" data-tipo="principal" data-titulo="Vacinas"></div>
 
 <!-- Modal Ajuda -->
 <div class="br-scrim-util foco" id="scrim-ajuda-vacinas" data-scrim="true">
@@ -58,9 +41,9 @@
       <div class="banner-text">
         <div class="text-weight-regular text-up-01">Acesse aqui a sua</div>
         <div class="text-weight-semi-bold text-up-02">Carteira Nacional de Vacinação</div>
-        <button class="br-button secondary block" type="button">
+        <a href="./cns.html"class="br-button secondary block" type="button">
           <i class="fas fa-chevron-right" aria-hidden="true"></i>Acessar
-        </button>
+        </a>
       </div>
       <div class="banner-vacinacao-icon" aria-hidden="true">
         <img src="./assets/vacina.svg" alt="" />
@@ -273,6 +256,7 @@
   </div>
 
   <script src="./js/core.min.js"></script>
+  <script src="./js/header.js"></script>  
   <script>
     const abasList = []
     for (const brTab of window.document.querySelectorAll('.br-tab')) {

@@ -17,18 +17,7 @@
  
 <body>
 
-  <!--HEADER-->
-
-  <header class="br-header">
-    <div class="container-lg">
-        <div class="header-top">
-        <div class="header-logo"><img src="\assets\logo.svg" alt="Logo do Governo do Brasil">
-            <div class="br-list">
-            <div class="header">
-              <div class="title text-weight-semi-bold text-up-02">Tela inicial</div>
-            </div>
-      </div>
-  </header>   
+  <div id="header-container" data-tipo="principal" data-titulo="Tela Inicial"></div>
 
   <main>
 
@@ -293,11 +282,12 @@
   </main>
 
   <div id="navbar-container"></div>
-  <script src="./js/navbar.js"></script>
 
+  <script src="./js/navbar.js"></script>
+  <script src="./js/header.js"></script>
   <script src="./js/link-saude.js"></script>  
-                
   <script src="./js/core.min.js"></script>
+
   <script>
     const carouselList = []
       for (const brCarousel of window.document.querySelectorAll('.br-carousel')) {

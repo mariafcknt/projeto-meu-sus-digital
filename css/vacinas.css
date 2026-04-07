@@ -39,7 +39,7 @@ main {
     width: 60%;
 }
 
-.banner-text button {
+.banner-text a {
     margin-top: 16px;
     align-self: flex-start;
 }

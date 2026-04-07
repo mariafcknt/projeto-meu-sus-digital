@@ -1,4 +1,4 @@
-fetch('./header.html')
+fetch('./components/header.html')
   .then(response => response.text())
   .then(html => {
     const container = document.getElementById('header-container')
@@ -21,4 +21,5 @@ fetch('./header.html')
       document.getElementById('header-subtitulo').textContent = titulo || ''
       document.getElementById('header-voltar').setAttribute('href', voltar || './index.html')
     }
+    
   })
