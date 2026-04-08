@@ -4,3 +4,10 @@ main {
     gap: 1rem;
 }
 
+.br-item > .row > .col {
+    color: #333;       
+}
+
+.fa-sign-out-alt {
+    color: #e60000;
+}
