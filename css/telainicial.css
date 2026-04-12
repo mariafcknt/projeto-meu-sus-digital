@@ -1,3 +1,9 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .br-carousel {
     --carousel-min-height: 250px !important;
 }
@@ -10,8 +16,8 @@
     color: #ffffff;
 }
 
-.mini-apps-content {
-    padding-bottom: 1rem;;
+.links-wrapper {
+    padding-bottom: 1rem;
 }
 
 .card-img {
@@ -45,11 +51,48 @@
     margin-top: 4px;
 }
 
-
 .blog-content {
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+.br-modal {
+    width: 80%!important;
+    max-height: 60vh !important;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.br-wizard {
+    height: 100% !important;
+    max-height: 100% !important;
+    min-height: 0 !important;
+}
+
+.br-wizard .wizard-form {
+    flex: 1 !important;
+    height: 0 !important; /* força o flex a calcular a altura */
+    min-height: 0;
+}
+
+.br-wizard .wizard-panel[active] {
+    height: 100% !important;
+    flex: 1 !important;
+    min-height: 0;
+}
+
+.br-wizard .wizard-panel-content {
+    flex: 1 !important;
+    height: 0 !important; /* força o scroll a funcionar */
+    overflow-y: auto !important;
+}
+
+.wizard-sample-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (width >= 576px) {
