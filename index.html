@@ -19,7 +19,6 @@
   <div id="header-container" data-tipo="principal" data-titulo="Tela Inicial"></div>
 
   <main>
-
     <!--CARROSSEL-->
 
     <div class="row justify-content-center">
@@ -29,7 +28,7 @@
           <div class="col-12">
             <div class="br-carousel" data-stage="in" data-mobile-nav="" aria-label="Carrossel" aria-roledescription="carousel">
               <div class="carousel-button">
-                <button class="br-button carousel-btn-prev terciary circle" type="button" aria-label="Anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i>
+                <button class="br-button carousel-btn-prev terciary circle large" type="button" aria-label="Anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i>
                 </button>
               </div>
               <div class="carousel-stage">
@@ -60,7 +59,7 @@
                 </div>
               </div>
               <div class="carousel-button">
-                <button class="br-button carousel-btn-next terciary circle" type="button" aria-label="Próximo"><i class="fas fa-chevron-right" aria-hidden="true"></i>
+                <button class="br-button carousel-btn-next terciary circle large" type="button" aria-label="Próximo"><i class="fas fa-chevron-right" aria-hidden="true"></i>
                 </button>
               </div>
               <div class="carousel-step">
@@ -94,7 +93,7 @@
       <div class="links-wrapper" id="links-saude-container" data-limite="4"></div>
     </div>
 
-    <a href="./minhasaude.html" class="br-button block secondary mb-3" type="button"> <i class="fas fa-angle-right" aria-hidden="true"></i>Ver tudo <span class="sr-only">na tela Minha Saúde</span></a>
+    <a href="./minhasaude.html" class="br-button block secondary mb-3 large" type="button"> <i class="fas fa-angle-right" aria-hidden="true"></i>Ver tudo <span class="sr-only">na tela Minha Saúde</span></a>
 
     <span class="br-divider sm my-3"></span>
 
@@ -109,28 +108,32 @@
     <div class="links-category-content mini-apps-content">
       <div class="links-wrapper" id="mini-apps-container">
     
-        <a href="#" class="links-content-wrapper" aria-label="Peso Saudável">
+        <a href="#" class="links-content-wrapper" aria-label="Peso Saudável, aplicação não disponível neste protótipo"
+          aria-disabled="true">
           <div class="link-box link-box--gradient">
             <i class="fas fa-weight icon-link-box" aria-hidden="true"></i>
           </div>
           <p class="text-weight-semi-bold text-up-01">Peso Saudável</p>
         </a>
     
-        <a href="#" class="links-content-wrapper" aria-label="Guia Pós-Covid">
+        <a href="#" class="links-content-wrapper" aria-label="Guia Pós-Covid, aplicação não disponível neste protótipo"
+          aria-disabled="true">
           <div class="link-box link-box--gradient">
             <i class="fas fa-viruses icon-link-box" aria-hidden="true"></i>
           </div>
           <p class="text-weight-semi-bold text-up-01">Guia Pós-Covid</p>
         </a>
     
-        <a href="#" class="links-content-wrapper" aria-label="Equidade SUS">
+        <a href="#" class="links-content-wrapper" aria-label="Equidade SUS, aplicação não disponível neste protótipo"
+          aria-disabled="true">
           <div class="link-box link-box--gradient">
             <i class="fas fa-hands-helping icon-link-box" aria-hidden="true"></i>
           </div>
           <p class="text-weight-semi-bold text-up-01">Equidade SUS</p>
         </a>
     
-        <a href="#" class="links-content-wrapper" aria-label="Transplantes">
+        <a href="#" class="links-content-wrapper" aria-label="Transplantes, aplicação não disponível neste protótipo"
+          aria-disabled="true">
           <div class="link-box link-box--gradient">
             <i class="fas fa-hand-holding-heart icon-link-box" aria-hidden="true"></i>
           </div>
@@ -139,7 +142,7 @@
       </div>
     </div>
 
-    <a href="./aplicacoes.html"  class="br-button block secondary mb-3" type="button"> <i class="fas fa-angle-right" aria-hidden="true"></i>Ver tudo <span class="sr-only">na tela Aplicações</span></a>
+    <a href="./aplicacoes.html"  class="br-button block secondary mb-3 large" type="button"> <i class="fas fa-angle-right" aria-hidden="true"></i>Ver tudo <span class="sr-only">na tela Aplicações</span></a>
 
     <span class="br-divider sm my-3"></span>
 
@@ -171,10 +174,11 @@
             <div class="card-footer">
               <div class="d-flex">
                 <div>
-                  <button class="br-button" type="button">Ver mais</button>
+                  <button class="br-button disabled large" type="button" aria-label="Ver mais"
+                    aria-disabled="true">Ver mais</button>
                 </div>
                 <div class="ml-auto">
-                  <button class="br-button circle" type="button" aria-label="Compartilhar conteúdo"><i class="fas fa-share-alt" aria-hidden="true"></i>
+                  <button class="br-button circle disabled large" type="button" aria-label="Compartilhar conteúdo" aria-disabled="true"><i class="fas fa-share-alt" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -200,10 +204,11 @@
             <div class="card-footer">
               <div class="d-flex">
                 <div>
-                  <button class="br-button" type="button">Ver mais</button>
+                  <button class="br-button disabled large" type="button" aria-label="Ver mais"
+                    aria-disabled="true">Ver mais</button>
                 </div>
                 <div class="ml-auto">
-                  <button class="br-button circle" type="button" aria-label="Compartilhar conteúdo"><i class="fas fa-share-alt" aria-hidden="true"></i>
+                  <button class="br-button circle disabled large" type="button" aria-label="Compartilhar conteúdo" aria-disabled="true"><i class="fas fa-share-alt" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -224,16 +229,16 @@
             </div>
             <div class="card-content">
               <div class="card-img"><img src=".\assets\image\enchente.jpg" alt="Imagem de cidade parcialmente coberta por água de enchente"/></div>
-
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore perferendis nam porro atque ex at, numquam non optio ab eveniet error vel ad exercitationem, earum et fugiat recusandae harum? Assumenda.</p>
             </div>
             <div class="card-footer">
               <div class="d-flex">
                 <div>
-                  <button class="br-button" type="button">Ver mais</button>
+                  <button class="br-button disabled large" type="button" aria-label="Ver mais"
+                    aria-disabled="true">Ver mais</button>
                 </div>
                 <div class="ml-auto">
-                  <button class="br-button circle" type="button" aria-label="Compartilhar conteúdo"><i class="fas fa-share-alt" aria-hidden="true"></i>
+                  <button class="br-button circle disabled large" type="button" aria-label="Compartilhar conteúdo" aria-disabled="true"><i class="fas fa-share-alt" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -254,16 +259,16 @@
             </div>
             <div class="card-content">
               <div class="card-img"><img src=".\assets\image\depressao.jpg" alt="Imagem de uma mulher olhando para o mar enquanto está sentada na praia"/></div>
-
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore perferendis nam porro atque ex at, numquam non optio ab eveniet error vel ad exercitationem, earum et fugiat recusandae harum? Assumenda.</p>
             </div>
             <div class="card-footer">
               <div class="d-flex">
                 <div>
-                  <button class="br-button" type="button">Ver mais</button>
+                  <button class="br-button disabled large" type="button" aria-label="Ver mais"
+                    aria-disabled="true">Ver mais</button>
                 </div>
                 <div class="ml-auto">
-                  <button class="br-button circle" type="button" aria-label="Compartilhar conteúdo"><i class="fas fa-share-alt" aria-hidden="true"></i>
+                  <button class="br-button circle disabled large" type="button" aria-label="Compartilhar conteúdo" aria-disabled="true"><i class="fas fa-share-alt" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -271,7 +276,7 @@
           </div>
         </div>
       </div>
-      <a href="./conteudo.html"  class="br-button block secondary mb-3" type="button"> <i class="fas fa-angle-right" aria-hidden="true"></i>Ver tudo <span class="sr-only">na tela Conteúdo</span></a>
+      <a href="./conteudo.html"  class="br-button block secondary mb-3 large" type="button"> <i class="fas fa-angle-right" aria-hidden="true"></i>Ver tudo <span class="sr-only">na tela Conteúdo</span></a>
     </div> 
 
     <div class="text-center text-down-01">Você chegou ao fim do conteúdo desta tela.</div>

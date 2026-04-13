@@ -20,6 +20,11 @@ main {
     padding-bottom: 1rem;
 }
 
+.links-content-wrapper[aria-disabled="true"] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
 .card-img {
     aspect-ratio: 16 / 9; 
     width: 100%;
