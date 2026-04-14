@@ -6,6 +6,21 @@ main {
     padding-bottom: 120px !important;
 }
 
+.br-header{
+    height: 72px;
+    align-items: center;
+}
+
+.header-top {
+    align-items: center !important;
+}
+
+header > .container-lg {
+    max-width: 100%;
+    padding-left: 16px;
+  }
+
+
 .navbar-app {
     position: fixed;
     bottom: 0;
@@ -16,8 +31,8 @@ main {
     justify-content: space-around;
     align-items: center;
     padding: 8px clamp(0.5rem, 3vw, 2rem);
-    padding-top: 12px;
-    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    padding-top: 8px;
+    padding-bottom: calc(8px + env(safe-area-inset-bottom));
     background-color: #ffffff;
     border-top: 1px solid #d9d9d9;
     z-index: 1000;
@@ -182,3 +197,4 @@ main {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+

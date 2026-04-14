@@ -1,0 +1,204 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu SUS Digital - Conteúdo</title>
+  <link rel="stylesheet" href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css" />
+  <link rel="stylesheet" href="css/core.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div id="header-container" data-tipo="interno" data-titulo="Apresentação" data-voltar="./index.html"></div>
+
+  <main>
+   
+    <p>Esta é uma breve apresentação do Meu SUS Digital para ajudar você a conhecer as principais funcionalidades.</p>
+    
+    <div class="wizard-sample-1">
+        <div class="br-wizard" collapsed="collapsed" step="1">
+            <div class="wizard-progress" role="tablist">
+                <button class="wizard-progress-btn" type="button" aria-labelledby="info1" role="tab" aria-controls="tab1"
+                    title="Início">
+                    <span class="info" id="info1">Início</span>
+                </button>
+                <button class="wizard-progress-btn" type="button" aria-labelledby="info2" role="tab" aria-controls="tab2"
+                    title="Aplicações" active="active">
+                    <span class="info" id="info2">Aplicações</span>
+                </button>
+                <button class="wizard-progress-btn" type="button" aria-labelledby="info3" role="tab" aria-controls="tab3"
+                    title="Minha Saúde" active="active">
+                    <span class="info" id="info3">Minha Saúde</span>
+                </button>
+                <button class="wizard-progress-btn" type="button" aria-labelledby="info4" role="tab" aria-controls="tab4"
+                    title="Conteúdo" active="active">
+                    <span class="info" id="info4">Conteúdo</span>
+                </button>
+                <button class="wizard-progress-btn" type="button" aria-labelledby="info5" role="tab" aria-controls="tab5"
+                    title="Perfil" active="active">
+                    <span class="info" id="info5">Perfil</span>
+                </button>
+            </div>
+            <div class="wizard-form">
+    
+                <div class="wizard-panel" active="active" role="tabpanel" id="tab1">
+                    <div class="wizard-panel-content" tabindex="0">
+                        <div class="h3">Início <i class="fas fa-home" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <p>Nessa tela você encontra atalhos para as principais áreas do aplicativo, facilitando o acesso
+                                ao que você precisa:</p>
+                            <ul>
+                                <li>Minha Saúde</li>
+                                <li>Aplicações</li>
+                                <li>Conteúdos</li>
+                            </ul>
+                            <p>No topo da tela, acompanhe avisos e novidades importantes para você.</p>
+                            <a href="./index.html" class="br-button terciary block"
+                                aria-label="Ir para a tela de Início">Ir para a tela de Início</a>
+                        </div>
+                    </div>
+                    <div class="wizard-panel-btn">
+                        <button class="br-button primary wizard-btn-next" type="button"
+                            aria-description="Passo 2 de 5: Aplicações">Avançar</button>
+                    </div>
+                </div>
+    
+                <div class="wizard-panel" role="tabpanel" id="tab2">
+                    <div class="wizard-panel-content" tabindex="0">
+                        <div class="h3">Aplicações <i class="fas fa-th-large" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <p>Aqui você encontra aplicativos e publicações que apoiam o cuidado com a sua saúde, tudo em um
+                                só lugar.</p>
+                            <p>Confira alguns aplicativos e publicações disponíveis:</p>
+                            <ul>
+                                <li>Guia Pós-Covid</li>
+                                <li>Peso Saudável</li>
+                                <li>Equidade SUS</li>
+                                <li>Transplantes</li>
+                            </ul>
+                            <p>E muito mais para você explorar.</p>
+                            <a href="./aplicacoes.html" class="br-button terciary block"
+                                aria-label="Ir para a tela de Aplicações">Ir para a tela de Aplicações</a>
+                        </div>
+                    </div>
+                    <div class="wizard-panel-btn">
+                        <button class="br-button primary wizard-btn-next" type="button"
+                            aria-description="Passo 3 de 5: Minha Saúde">Avançar</button>
+                        <button class="br-button secondary wizard-btn-prev" type="button"
+                            aria-description="Passo 1 de 5: Início">Voltar</button>
+                    </div>
+                </div>
+    
+                <div class="wizard-panel" role="tabpanel" id="tab3">
+                    <div class="wizard-panel-content" tabindex="0">
+                        <div class="h3">Minha Saúde <img src="./assets/logo-sus-blue.svg" alt="" aria-hidden="true"></div>
+                        <div class="text">
+                            <p>Aqui você encontra serviços importantes para cuidar da sua saúde de forma simples e prática:
+                            </p>
+                            <ul>
+                                <li>Vacinas</li>
+                                <li>Exames</li>
+                                <li>Rede de Saúde</li>
+                                <li>Agendamentos</li>
+                            </ul>
+                            <p>E muito mais para acompanhar o seu cuidado.</p>
+                            <a href="./minhasaude.html" class="br-button terciary block"
+                                aria-label="Ir para a tela de Minha Saúde">Ir para a tela de Minha Saúde</a>
+                        </div>
+                    </div>
+                    <div class="wizard-panel-btn">
+                        <button class="br-button primary wizard-btn-next" type="button"
+                            aria-description="Passo 4 de 5: Conteúdo">Avançar</button>
+                        <button class="br-button secondary wizard-btn-prev" type="button"
+                            aria-description="Passo 2 de 5: Aplicações">Voltar</button>
+                    </div>
+                </div>
+    
+                <div class="wizard-panel" role="tabpanel" id="tab4">
+                    <div class="wizard-panel-content" tabindex="0">
+                        <div class="h3">Conteúdo <i class="fas fa-book" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <p>Aqui você encontra informações confiáveis para cuidar da sua saúde e bem-estar no dia a dia:
+                            </p>
+                            <ul>
+                                <li>Saúde Mental</li>
+                                <li>Doenças virais</li>
+                                <li>Meio ambiente</li>
+                                <li>Animais peçonhentos</li>
+                            </ul>
+                            <p>E muito mais para você se informar e se cuidar melhor.</p>
+                            <a href="./conteudo.html" class="br-button terciary block"
+                                aria-label="Ir para a tela de Conteúdo">Ir para a tela de Conteúdo</a>
+                        </div>
+                    </div>
+                    <div class="wizard-panel-btn">
+                        <button class="br-button primary wizard-btn-next" type="button"
+                            aria-description="Passo 5 de 5: Perfil">Avançar</button>
+                        <button class="br-button secondary wizard-btn-prev" type="button"
+                            aria-description="Passo 3 de 5: Minha Saúde">Voltar</button>
+                    </div>
+                </div>
+    
+                <div class="wizard-panel" role="tabpanel" id="tab5">
+                    <div class="wizard-panel-content" tabindex="0">
+                        <div class="h3">Perfil <i class="fas fa-user" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <p>Aqui você pode acessar seus dados, ajustar suas preferências e encontrar outras opções
+                                importantes do aplicativo.</p>
+                            <p>Também é possível consultar informações, tirar dúvidas e gerenciar sua conta com facilidade.
+                            </p>
+                            <a href="./meuperfil.html" class="br-button terciary block"
+                                aria-label="Ir para a tela de Perfil">Ir para a tela de Perfil</a>
+                        </div>
+                    </div>
+                    <div class="wizard-panel-btn">
+                        <button class="br-button primary wizard-btn" type="button">Concluir</button>
+                        <button class="br-button secondary wizard-btn-prev" type="button"
+                            aria-description="Passo 4 de 5: Conteúdo">Voltar</button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="text-center text-down-01">Você chegou ao fim do conteúdo desta tela.</div>
+
+  </main>
+
+  <div id="navbar-container"></div>
+
+  <script src="./js/core.min.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/empty-space.js"></script>
+  <script src="./js/navbar.js"></script>
+
+  <script>
+    const wizardList = []
+        for (const brWizard of window.document.querySelectorAll('.br-wizard')) {
+            wizardList.push(new core.BRWizard('br-wizard', brWizard))
+        }
+  </script>
+
+  <style>
+    .wizard-sample-1 {
+            height: 70%;
+    }
+
+    .wizard-panel .h3 {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .wizard-panel .h3 img {
+        width: 20px !important;
+        height: 20px !important;
+        display: inline-block;
+        vertical-align: middle;
+    }
+  </style>
+
+</body>
+</html>
