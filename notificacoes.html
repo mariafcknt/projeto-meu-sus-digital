@@ -1,0 +1,59 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu SUS Digital - Notificações</title>
+  <link rel="stylesheet" href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css" />
+  <link rel="stylesheet" href="css/core.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div id="header-container" data-tipo="interno" data-titulo="Notificações" data-voltar="./meuperfil.html"></div>
+
+  <main>
+   
+    <div>
+        <p class="text-up-01 text-weight-semi-bold">Receber notificações</p>
+        <div class="col-md mt-3 mt-md-0">
+            <div class="br-switch right mr-5" role="presentation">
+                <input id="switch-right" type="checkbox" name="switch-right" checked="checked" role="switch" />
+                <label for="switch-right">Habilitar/desabilitar notificações do Meu SUS Digital</label>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <p class="text-up-01 text-weight-semi-bold">Ordem das notificações</p>
+        <div class="col-md mt-3 mt-md-0">
+            <div class="br-switch right mr-5" role="presentation">
+                <input id="switch-right2" type="checkbox" name="switch-right2" checked="checked" role="switch" />
+                <label for="switch-right2">Mostrar notificações pelas mais recentes</label>
+            </div>
+        </div>
+    </div>
+    
+    <a href="#" class="br-button block secondary mb-3 disabled" type="button"> <i class="fas fa-history" aria-hidden="true"></i>Ver histórico de notificações</a>
+
+    <div class="text-center justify-content-center text-down-01">Você chegou ao fim do conteúdo desta tela.</div>
+
+  </main>
+
+  <div id="navbar-container"></div>
+
+  <script src="./js/core.min.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/empty-space.js"></script>
+  <script src="./js/navbar.js"></script>
+
+  <style>
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+  </style>
+
+</body>
+</html>
