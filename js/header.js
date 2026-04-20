@@ -8,18 +8,23 @@ fetch('./components/header.html')
     const titulo = container.dataset.titulo
     const voltar = container.dataset.voltar
 
-    // mostra apenas o header correto
     document.getElementById('header-principal').style.display = tipo === 'principal' ? '' : 'none'
     document.getElementById('header-interno').style.display = tipo === 'interno' ? '' : 'none'
 
-    // aplica título e link de voltar dinamicamente
     if (tipo === 'principal') {
       document.getElementById('header-titulo').textContent = titulo || 'Tela inicial'
     }
 
     if (tipo === 'interno') {
       document.getElementById('header-subtitulo').textContent = titulo || ''
-      document.getElementById('header-voltar').setAttribute('href', voltar || './index.html')
+
+      const paginaAnterior = sessionStorage.getItem('pagina-anterior')
+      const destino = voltar || paginaAnterior || './index.html'
+
+      document.getElementById('header-voltar').setAttribute('href', destino)
+
+      if (!voltar) {
+        sessionStorage.removeItem('pagina-anterior')
+      }
     }
-    
   })

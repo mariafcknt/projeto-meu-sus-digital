@@ -35,11 +35,11 @@ main {
     object-fit: contain;
 }
 
-.banner-text {
+.banner-content {
     width: 60%;
 }
 
-.banner-text a {
+.banner-content a {
     margin-top: 16px;
     align-self: flex-start;
 }
