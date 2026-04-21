@@ -15,51 +15,101 @@
   </head>
 
 <body>
+
   <main>
-
-    <div class="top-info">
-      <img src=".\assets\logo-sus.svg" class="sus-logo" alt="Logo do Sistema Único de Saúde em azul"/>
-      <h2 class="titulo-grid-4">Acesse o <b>Meu SUS Digital</b></h2>
-      <p>Entre com sua conta <i>gov.br</i> abaixo ou continue pelo navegador</p>
+  
+    <div class="accessibility-bar">
+      <button class="br-button circle large disabled" aria-disabled="true" type="button" id="btn-alto-contraste" aria-label="Ativar alto contraste">
+        <i class="fas fa-adjust" aria-hidden="true"></i>
+      </button>
+      <button class="br-button circle large disabled" aria-disabled="true" type="button"
+        aria-label="Ativar VLibras - tradução para Língua Brasileira de Sinais">
+        <i class="fas fa-deaf" aria-hidden="true"></i>
+      </button>
     </div>
-
+  
+    <div class="top-info">
+      <img src=".\assets\logo-sus.svg" class="sus-logo" alt="Logo do Sistema Único de Saúde em azul" />
+      <h2 class="titulo-grid-4">Acesse o <b>Meu SUS Digital</b></h2>
+      <p>Entre com sua conta <b>gov.br</b> ou crie uma para continuar</p>
+    </div>
+  
     <div class="inputs-container">
-
+  
       <div class="br-input input-button">
         <label for="input-icon">CPF</label>
         <div class="input-group">
           <div class="input-icon"><i class="fas fa-user-tie" aria-hidden="true"></i></div>
-          <input id="input-icon" type="text" placeholder="Digite o seu CPF"/>
+          <input id="input-icon" type="text" placeholder="Digite o seu CPF" />
         </div>
       </div>
-
+  
       <div class="br-input input-button">
         <label for="input-password">Senha</label>
         <div class="input-group">
           <div class="input-icon"><i class="fas fa-key" aria-hidden="true"></i></div>
-          <input id="input-password" type="password" placeholder="Digite a sua senha"/>
-          <button class="br-button" type="button" aria-label="Exibir senha" role="switch" aria-checked="false"><i class="fas fa-eye" aria-hidden="true"></i></button>
+          <input id="input-password" type="password" placeholder="Digite a sua senha" />
+          <button class="br-button" type="button" aria-label="Exibir senha" role="switch" aria-checked="false"><i
+              class="fas fa-eye" aria-hidden="true"></i></button>
         </div>
       </div>
-
+  
       <div class="br-item" data-toggle="selection">
         <div class="br-checkbox">
-          <input id="check-01" name="check-01" type="checkbox"/>
+          <input id="check-01" name="check-01" type="checkbox" />
           <label for="check-01">Manter-me conectado</label>
         </div>
       </div>
-
+  
     </div>
-
+  
     <div class="buttons-container">
       <a href="./index.html" class="br-button block primary large" type="button">Entrar</a>
-      <button class="br-button block secondary large" type="button">Entrar pelo site<img src="\assets\logo.svg" class="logo" alt="Logo do Governo do Brasil"></button>
-      <button class="br-button block large" type="button">Esqueci a senha</button>
-   </div>
-
-   <br>
-   <button class="br-button block large" type="button"><i class="fas fa-question-circle" aria-hidden="true"></i>Está com dúvidas?</button>
-   
+      <button class="br-button secondary block large disabled" type="button" aria-disabled="true">Criar conta gov.br</button>
+      <div>
+        <h3 class="text-weight-semi-bold text-up-01">Outras opções de identificação:</h3>
+        <span class="br-divider" role="separator"></span>
+      </div>
+  
+  
+      <ul class="auth-list" aria-label="Métodos alternativos de autenticação">
+  
+        <li class="auth-item bank-item">
+          <a href="#" class="auth-link disabled"
+            aria-label="Login com seu banco, funcionalidade não disponível neste protótipo" aria-disabled="true">
+            <i class="fas fa-university" aria-hidden="true"></i>
+            Login com seu banco
+          </a>
+          <span class="br-tag bg-mint-70 small" aria-label="Sua conta será prata">Sua conta será prata</span>
+        </li>
+  
+        <li class="auth-item">
+          <a href="#" class="auth-link disabled"
+            aria-label="Seu certificado digital, funcionalidade não disponível neste protótipo" aria-disabled="true">
+            <i class="fas fa-key" aria-hidden="true"></i>
+            Seu certificado digital
+          </a>
+        </li>
+  
+        <li class="auth-item">
+          <a href="#" class="auth-link disabled"
+            aria-label="Seu certificado digital em nuvem, funcionalidade não disponível neste protótipo"
+            aria-disabled="true">
+            <i class="fas fa-cloud" aria-hidden="true"></i>
+            Seu certificado digital em nuvem
+          </a>
+        </li>
+  
+      </ul>
+  
+    </div>
+    <br>
+    <button class="br-button block large disabled" aria-disabled="true" type="button"><i class="fas fa-question-circle" aria-hidden="true"></i>Está com
+      dúvidas?</button>
+    <button class="br-button block large disabled" aria-disabled="true" type="button">Termo de Uso e Aviso de Privacidade</button>
+    <br>
+    <div class="text-center text-down-01">Você chegou ao fim do conteúdo desta tela.</div>
+  
   </main>
 
   <script src="./js/core.min.js"></script>

@@ -50,11 +50,9 @@ main {
     gap: 24px;
 }
 
-
 .cnv-conteiner {
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
-
 
 .vacinas-card {
     display: flex;
@@ -190,14 +188,15 @@ main {
 }
 
 .dose-icon .fa-syringe {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #0c326f;
 }
 
 .tab-content {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .br-modal {
     width: 80%!important;
+    max-height: 70%!important;
 }

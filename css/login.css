@@ -3,16 +3,22 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center; /* mantém a imagem centralizada */
-    gap: 24px;
-    padding: 2rem;
+    gap: 1rem;
     margin: 0 auto;
     min-height: 100vh;
+}
+
+.accessibility-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-self: flex-end;
 }
 
 .sus-logo {
     display: block;
     margin: 0 auto; /* centraliza a logo */
-    max-width: 4rem;
+    max-width: 3.5rem;
     height: auto;
 }
 
@@ -37,6 +43,49 @@ main {
     gap: 1rem;
 }
 
+.auth-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.auth-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.auth-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1351b4;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+
+.auth-link {
+    color: #1351b4;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 0; 
+    display: block;
+    flex: 1; 
+    border-radius: 4px;
+}
+
+
+
+.bank-item > a {
+    color:#204e34;
+}
 
 .logo {
     max-width: 4rem;
