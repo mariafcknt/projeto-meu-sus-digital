@@ -29,7 +29,7 @@
     </div>
   
     <div class="top-info">
-      <img src=".\assets\logo-sus.svg" class="sus-logo" alt="Logo do Sistema Único de Saúde em azul" />
+      <img src=".\assets\logo-sus.svg" class="sus-logo" aria-hidden="true" alt="Logo do SUS"/>
       <h2 class="titulo-grid-4">Acesse o <b>Meu SUS Digital</b></h2>
       <p>Entre com sua conta <b>gov.br</b> ou crie uma para continuar</p>
     </div>
@@ -40,7 +40,7 @@
         <label for="input-icon">CPF</label>
         <div class="input-group">
           <div class="input-icon"><i class="fas fa-user-tie" aria-hidden="true"></i></div>
-          <input id="input-icon" type="text" placeholder="Digite o seu CPF" />
+          <input id="input-icon" type="text" maxlength="14" inputmode="numeric" placeholder="Digite o seu CPF"/>
         </div>
       </div>
   
@@ -66,13 +66,14 @@
     <div class="buttons-container">
       <a href="./index.html" class="br-button block primary large" type="button">Entrar</a>
       <button class="br-button secondary block large disabled" type="button" aria-disabled="true">Criar conta gov.br</button>
+      <button class="br-button terciary block large disabled" type="button" aria-disabled="true">Esqueci minha senha</button>
       <div>
         <h3 class="text-weight-semi-bold text-up-01">Outras opções de identificação:</h3>
         <span class="br-divider" role="separator"></span>
       </div>
   
   
-      <ul class="auth-list" aria-label="Métodos alternativos de autenticação">
+      <ul class="auth-list" aria-label="Métodos alternativos de identificação">
   
         <li class="auth-item bank-item">
           <a href="#" class="auth-link disabled"
@@ -118,6 +119,19 @@
     for (const brInput of window.document.querySelectorAll('.br-input')) {
       inputList.push(new core.BRInput('br-input', brInput))
     }
+
+    const cpfInput = document.getElementById('input-icon');
+
+    cpfInput.addEventListener('input', function (e) {
+    let value = e.target.value.replace(/\D/g, ''); 
+    value = value
+      .replace(/^(\d{3})(\d)/, '$1.$2')
+      .replace(/^(\d{3})\.(\d{3})(\d)/, '$1.$2.$3')
+      .replace(/\.(\d{3})(\d)/, '.$1-$2')
+      .replace(/(-\d{2})\d+?$/, '$1');
+
+    e.target.value = value;
+});
   </script>        
 </body>
 </html>

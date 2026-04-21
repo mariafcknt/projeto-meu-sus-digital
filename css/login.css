@@ -8,6 +8,7 @@ main {
     min-height: 100vh;
 }
 
+
 .accessibility-bar {
     display: flex;
     flex-direction: row;
