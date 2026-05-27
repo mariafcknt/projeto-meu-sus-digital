@@ -7,9 +7,9 @@
   <title>Meu SUS Digital - Suas vacinas Covid-19</title>
   <link rel="stylesheet"
     href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css" />
-  <link rel="stylesheet" href="/css/core.css" />
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/vacinas-detalhes.css">
+  <link rel="stylesheet" href="../css/core.css" />
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/vacinas-detalhes.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -22,7 +22,7 @@
   
     <div class="banner-exportar">
       <div class="banner-exportar-icon" aria-hidden="true">
-        <img src="/assets/seringa.svg" alt="" />
+        <img src="../assets/seringa.svg" alt="" />
       </div>
       <div class="text-weight-semi-bold text-up-02">Certificado de Vacinação de Covid-19</div>
       <button class="br-button secondary large disabled" aria-disabled="true" type="button">
@@ -145,9 +145,11 @@
   </main>
 
   <div id="navbar-container"></div>
-  <script src="/js/navbar.js"></script>
-  <script src="/js/header.js"></script>
-  <script src="/js/core.min.js"></script>
+  
+  <script src="../js/navbar.js"></script>
+  <script src="../js/header.js"></script>
+  <script src="../js/core.min.js"></script>
+
   <script>
     const collapseList = []
     for (const brList of document.querySelectorAll('.br-list[data-sub]')) {
@@ -169,7 +171,6 @@
       for (const brBreadcrumb of window.document.querySelectorAll('.br-breadcrumb')) {
         breadcrumbList.push(new core.BRBreadcrumb('br-breadcrumb', brBreadcrumb))
       }
-
   </script>
 
 </body>
