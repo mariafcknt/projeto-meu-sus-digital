@@ -1,4 +1,8 @@
-fetch('../components/navbar.html')
+const path = window.location.pathname.includes('/pages/')
+  ? '../components/navbar.html'
+  : './components/navbar.html'
+
+fetch(path)
   .then(response => response.text())
   .then(html => {
     document.getElementById('navbar-container').innerHTML = html
