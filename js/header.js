@@ -1,8 +1,8 @@
-const path = window.location.pathname.includes('/pages/')
+const headerPath = window.location.pathname.includes('/pages/')
   ? '../components/header.html'
   : './components/header.html'
 
-fetch(path)
+fetch(headerPath)
   .then(response => response.text())
   .then(html => {
     const container = document.getElementById('header-container')

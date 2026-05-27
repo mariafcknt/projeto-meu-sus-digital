@@ -1,8 +1,8 @@
-const path = window.location.pathname.includes('/pages/')
+const linkPath = window.location.pathname.includes('/pages/')
   ? '../components/links-saude.html'
   : './components/links-saude.html'
 
-fetch(path)
+fetch(linkPath)
   .then(response => response.text())
   .then(html => {
     const container = document.getElementById('links-saude-container')
