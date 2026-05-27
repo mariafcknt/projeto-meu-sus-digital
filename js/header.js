@@ -1,8 +1,10 @@
-fetch('./components/header.html')
+fetch('/components/header.html')
   .then(response => response.text())
   .then(html => {
     const container = document.getElementById('header-container')
-    container.innerHTML = html
+    if (!container) return
+
+    container.innerHTML = html 
 
     const tipo = container.dataset.tipo
     const titulo = container.dataset.titulo
@@ -19,7 +21,7 @@ fetch('./components/header.html')
       document.getElementById('header-subtitulo').textContent = titulo || ''
 
       const paginaAnterior = sessionStorage.getItem('pagina-anterior')
-      const destino = voltar || paginaAnterior || './index.html'
+      const destino = voltar || paginaAnterior || '../index.html'
 
       document.getElementById('header-voltar').setAttribute('href', destino)
 

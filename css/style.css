@@ -6,6 +6,13 @@ main {
     padding-bottom: 120px !important;
 }
 
+@media (width >= 1280px) {
+   main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+   }
+}
+
 .br-header{
     height: 72px;
     align-items: center;

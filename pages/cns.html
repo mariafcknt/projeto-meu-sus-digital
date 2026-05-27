@@ -7,19 +7,18 @@
   <title>Meu SUS Digital - Cartão Nacional de Saúde</title>
   <link rel="stylesheet"
     href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css" />
-  <link rel="stylesheet" href="css/core.css" />
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/cns.css">
+  <link rel="stylesheet" href="/css/core.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/cns.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-  <div id="header-container" data-tipo="interno" data-titulo="Cartão Nacional de Saúde">
-  </div>
+  <div id="header-container" data-tipo="interno" data-titulo="Suas vacinas" data-voltar="/pages/meuperfil.html"></div>
 
   <main>
-  
+
     <div class="br-carousel" data-circular="true" aria-hidden="true" aria-roledescription="carousel">
       <div class="carousel-button">
         <button class="br-button carousel-btn-prev terciary circle" type="button" aria-label="Anterior">
@@ -32,7 +31,7 @@
         <div class="carousel-page" active="active" role="group" aria-roledescription="slide" aria-live="polite">
           <div class="carousel-content cartao-frente">
             <div class="cartao-frente-logo">
-              <img src="./assets/logo-sus-white.svg" alt="" aria-hidden="true">
+              <img src="/assets/logo-sus-white.svg" alt="" aria-hidden="true">
             </div>
             <div class="cartao-sus-texto">
               <p class="cartao-nome-frente">Emilly Rosa Campos</p>
@@ -52,7 +51,7 @@
               <p class="cartao-cns" aria-label="CNS 7 6 1 2 6 6 2 7 6 0 4 1 2 0 8">CNS 761266276041208</p>
               <p class="cartao-cpf" aria-label="CPF 0 8 8 0 9 8 4 5 1 1 0">CPF 08809845110</p>
               <div class="cartao-qrcode">
-                <img src="./assets/qr-teste.svg"></img>
+                <img src="/assets/qr-teste.svg"></img>
               </div>
             </div>
           </div>
@@ -103,9 +102,9 @@
 
   <div id="navbar-container"></div>
 
-  <script src="./js/core.min.js"></script>
-  <script src="./js/navbar.js"></script>
-  <script src="./js/header.js"></script>
+  <script src="/js/core.min.js"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/header.js"></script>
   <script>
     const carouselList = []
     for (const brCarousel of document.querySelectorAll('.br-carousel')) {
