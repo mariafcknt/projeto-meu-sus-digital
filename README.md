@@ -10,7 +10,7 @@ O projeto também está disponível no GitHub Pages a partir deste [link](https:
 
 
 ## Crédito das imagens utilizadas
-*Os créditos também estão no final do arquivo index.html*.
+*Os créditos também estão no final do arquivo index.html em formato de comentário*.
 
 - Foto de Victor Freitas no Pexels: https://www.pexels.com/pt-br/foto/olho-de-pessoa-865711/
 - Foto de Pixabay no Pexels: https://www.pexels.com/pt-br/foto/mosquito-branco-preto-86722/
